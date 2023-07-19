@@ -1,0 +1,432 @@
+{% extends 'static_pages/base.html' %}
+{% load static %}
+{% block content %}
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid px-2 px-md-4">
+        <div class="navbar-brand">
+            <h3 class="text-light">Raghavendra Textiles</h3>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="dropdown mr-3">
+                <button class="btn btn-transparent text-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="{% static 'images/profile-icon.png' %}" class="profile-img" alt="IMG">
+                </button>
+                <div class="dropdown-menu shadow bg-white rounded animate__animated animate__zoomIn" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/profile/">Edit Profile</a>
+                    <a class="dropdown-item" href="/logout/">Logout</a>
+                </div>
+            </div>
+            <h5 class="text-light">{{ request.user }}</h5>
+        </div>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+   
+   <div class="container d-flex" style="display: flex;justify-content: space-between;align-items: center;">
+    
+    <diV>
+
+    <label for="courier" class="mx-2">Select type of courier:</label>
+    <select name="courier" id="courier" class="mx-2">
+      <option value="" selected> -- select courier -- </option>
+      <option  value="https://www.dtdc.in/tracking.asp">DTDC</option>
+      <option    value="https://www.indiapost.gov.in/_layouts/15/dop.portal.tracking/trackconsignment.aspx">INDIA POST</option>
+      
+    </select>
+    <button class="btn btn-primary btn-sm" onclick="SelectedOption()">Track your order</button>
+   
+  </diV>
+    <div class="d-flex justify-content-end mt-5 mb-5 px-5">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">New Order</button>
+    </div>
+    
+  </div>
+
+  <div class="container-fluid">
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">TransactionId</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">WhatsappNo</th>
+                    <th scope="col">Address</th>
+                    <th scope="col">Courier</th>
+                    <th scope="col">No_Of_Items</th>
+                    <th scope="col">OrderStatus</th>
+                    <th scope="col">TrackingId</th>
+                    <th scope="col">Details</th>
+                    <th scope="col">Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in orders_list %}
+                    <tr>
+                        <td>{{ item.TransactionId }}</td>
+                        <td>{{ item.Name }}</td>
+                        <td>{{ item.WhatsappNo }}</td>
+                        <td>{{ item.Address }}</td>
+                        <td>{{ item.Courier }}</td>
+                        <td>{{ item.No_Of_Items }}</td>
+                        <td>{{ item.OrderStatus }}</td>
+                        <td>{{ item.TrackingId }}</td>
+                        <td>
+                            <button class="btn btn-warning" data-toggle="modal" data-target="#viemyorders{{ item.TransactionId }}">View</button>
+                        </td>
+                        <td>{{ item.Date }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    
+    {% for item in orders_list %}
+        <!-- START VIEW ORDERS MODEL -->
+        <div class="modal fade" id="viemyorders{{ item.TransactionId }}" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title text-center" id="staticBackdropLabel">Your orders Items</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="viewtable text-center">
+                      <table class="table table-hover">
+                          <thead>
+                              <tr>
+                                  <th scope="col">OrderId</th>
+                                  <th scope="col">Size</th>
+                                  <th scope="col">Color</th>
+                                  <th scope="col">Photo</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              {% for order_item in view_orders_list %}
+                                  {% if order_item.TransactionId == item.TransactionId %}
+                                      <tr>
+                                          <td>{{ order_item.OrderID }}</td>
+                                          <td>{{ order_item.item_size }}</td>
+                                          <td>{{ order_item.item_color }}</td>
+                                          <td><img src="/media/{{ order_item.file }}" alt="" height="100" width="100"></td>
+                                      </tr>
+                                  {% endif %}
+                              {% endfor %}
+                          </tbody>
+                      </table>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- END VIEW ORDERS MODEL -->
+    {% endfor %}
+</div>
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title  text-center" id="staticBackdropLabel">Book Your orders</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+       
+      <form method="POST" enctype="multipart/form-data" autocomplete="off">
+        {% csrf_token %}
+      
+        <div class="modal-body">
+          {% if profile %}
+            <div class="row">
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="Name" name="Name" required placeholder="Name" value="{{ profile.firstname }}">
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="WhatsappNo" name="WhatsappNo" max="10" required placeholder="WhatsappNo">
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="phone" class="form-control" id="ContactNo" name="ContactNo" max="10" required placeholder="ContactNo" value="{{ profile.phonenumber }}">
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="Address" name="Address" placeholder="Address" value="{{ profile.address }}">
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="streetname" name="streetname" placeholder="Street Name">
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="City" name="City" placeholder="City" value="{{ profile.city }}">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="State" name="State" placeholder="State Name" value="{{ profile.state }}">
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="Postalcode" name="Postalcode" placeholder="Postalcode" value="{{ profile.zip_code }}">
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <select class="custom-select" name="Courier" id="Courier">
+                  <option selected>Choose. type Courier</option>
+                  <option value="Dtdtc">DTDC</option>
+                  <option value="India post">INDIA POST</option>
+                </select>
+              </div>
+            </div>
+          {% else %}
+            <!-- Empty fields for new user -->
+            <div class="row">
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="Name" name="Name" required placeholder="Name">
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="WhatsappNo" name="WhatsappNo" max="10" required placeholder="WhatsappNo">
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="phone" class="form-control" id="ContactNo" name="ContactNo" max="10" required placeholder="ContactNo">
+              </div>
+            </div>
+      
+            <div class="row">
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="Address" name="Address" placeholder="Address">
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="streetname" name="streetname" placeholder="Street Name">
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="City" name="City" placeholder="City">
+              </div>
+            </div>
+            <div class="row">
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="State" name="State" placeholder="State Name">
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="Postalcode" name="Postalcode" placeholder="Postalcode">
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <select class="custom-select" name="Courier" id="Courier">
+                  <option selected>Choose. type Courier</option>
+                  <option value="Dtdtc">DTDC</option>
+                  <option value="India post">INDIA POST</option>
+                </select>
+              </div>
+            </div>
+          {% endif %}
+      
+          <div class="row">
+            <div class="form-group col-sm-12 col-lg-4">
+              <input type="text" class="form-control" id="TransactionNo" name="TransactionNo" placeholder="PhonePay/GooglePay UTRNo">
+            </div>
+            <div class="form-group col-sm-12 col-lg-4">
+              <input type="number" class="form-control" id="No_of_items" name="No_of_items" onkeyup="createFields()" min="1" max="10" placeholder="No of items" onkeyup="updateFileInputs()">
+            </div>
+          </div>
+      
+          <div class="row">
+            <div id="fieldsContainer" class="row"></div>
+          </div>
+      
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+      
+      
+
+    </div>
+  </div>
+</div>
+</main>
+
+<script>
+  function createFields() {
+    var itemCount = parseInt(document.getElementById('No_of_items').value);
+    var fieldsContainer = document.getElementById('fieldsContainer');
+    fieldsContainer.innerHTML = '';
+  
+    for (var i = 0; i < itemCount; i++) {
+      var fieldGroup = document.createElement('div');
+  
+      var sizeLabel = document.createElement('label');
+      sizeLabel.innerHTML = 'Size:';
+      sizeLabel.className ="size-label"
+      fieldGroup.appendChild(sizeLabel);
+  
+      var sizeInput = document.createElement('select');
+      sizeInput.type = 'text';
+      sizeInput.id = 'size'+i;
+      sizeInput.name = 'size'+i;
+      sizeInput.class = 'form-group col-sm-12 col-lg-4 size-select form-control';
+      var sizes = ['S', 'M','L', 'XL', 'XXL', 'XXXL'];
+      for (var j = 0; j < sizes.length; j++) {
+        var option = document.createElement('option');
+        option.value = sizes[j];
+        option.text = sizes[j];
+        sizeInput.appendChild(option);
+      }
+      fieldGroup.appendChild(sizeInput);
+  
+      var colorLabel = document.createElement('label');
+      colorLabel.innerHTML = 'Color:';
+      colorLabel.className ="coor-label"
+      fieldGroup.appendChild(colorLabel);
+  
+      var colorInput = document.createElement('input');
+      colorInput.type = 'text';
+      colorInput.id = 'item_Color'+i;
+      colorInput.name = 'item_Color'+i;
+      colorInput.className  = 'col-sm-12 col-lg-4 item-color';
+      fieldGroup.appendChild(colorInput);
+  
+      var imageLabel = document.createElement('label');
+      imageLabel.innerHTML = 'Image:';
+      imageLabel.className ="size-label"
+      fieldGroup.appendChild(imageLabel);
+  
+      var imageInput = document.createElement('input');
+      imageInput.type = 'file';
+      imageInput.id = 'image_file'+i;
+      imageInput.name = 'image_file'+i;
+      imageInput.className  = 'form-group col-sm-12 col-lg-4 custome-file';
+      fieldGroup.appendChild(imageInput);
+  
+      fieldsContainer.appendChild(fieldGroup);
+    }
+  }
+</script>
+   
+
+   
+{% endblock %}
+ <!-- <form method="POST" enctype="multipart/form-data" autocomplete="off">
+          {% csrf_token %}
+          <div class="modal-body">
+            <div class="form-group">
+              <input type="text" class="form-control" id="Name" name="Name" requiured placeholder="Name" >
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" id="WhatsappNo" name="WhatsappNo" required   placeholder="WhatsappNo" >
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" value='' id="ContactNo" name="ContactNo" requiured placeholder="ContactNo" >
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" value=''   id="Address" name="Address"   placeholder="Address">
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" value='' id="streetname" name="streetname"  placeholder="Street Name" >
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" value='' id="City" name="City"  placeholder="City" >
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" value=''   id="State" name="State" placeholder="State Name" >
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control" value='' id="Postalcode" name="Postalcode"  placeholder="Postalcode" >
+            </div>
+            <div class="form-group">
+              
+              <select class="custom-select"  name="Courier"  id="Courier">
+                <option selected>Choose. type Courier</option>
+                <option value="Dtdtc">ddtc</option>
+                <option value="India post">India Post</option>
+                
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="text" class="form-control"   id="TransactionNo" name="TransactionNo" placeholder="PhonePay/GooglePay UTRNo">
+            </div>
+        
+            <div class="form-group">
+              <input type="text" class="form-control"  id="No_of_items" name="No_of_items"   placeholder="No of items" onkeyup="updateFileInputs()">
+            </div>
+            <div class="form-group">
+              <input name="image_file" type="file" id="image_file"  class="form-control"   accept=".jpg,.jpeg,.pdf,.png"   placeholder="upload image" >
+            </div>
+        
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+      -->
+
+
+
+      <!-- <nav class="navbar navbar-light bg-dark">
+    <div class="container-fluid d-flex px-5">
+        <div>
+            <div class="navbar-brand  animate__animated animate__fadeInLeft" href="#">
+                <h3 class="text-light">Raghavendra Textiles</h3>
+            </div>
+        </div>
+      <div class="profile-details animate__animated animate__fadeInRight animate__delay-1s d-flex justify-content-center align-items-center">
+        <div class="dropdown mx-2" >
+          <button class="btn btn-transparent   "  type="button" id="dropdownMenuButton" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
+            <img src="{% static 'images/profile-icon.png' %}" class="profile-img" alt="IMG">
+          </button>
+          <div class="dropdown-menu shadow px-5  bg-white rounded animate__animated animate__zoomIn " aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="/profile/">Edit Profile</a>
+         
+            <a class="dropdown-item" href="/logout/">logout</a>
+           
+          </div>
+        </div>
+      
+        <h5 class="text-light" >{{ request.user }}</h5>
+       
+        
+       
+      </div>
+    </div>
+  </nav> -->
+
+   <!-- <div class="container">
+    <table class="table table-hover px-5">
+        <thead>
+            <tr>
+              <th scope="col">OrderID</th>
+              <th scope="col">Name</th>
+              <th scope="col">WhatsappNo</th>
+              <th scope="col">Address</th>
+              <th scope="col">Courier</th>
+              <th scope="col">No_Of_Items</th>
+              <th scope="col">OrderStatus</th>
+              <th scope="col">TrackingId</th>
+              <th scope="col">image</th>
+              <th scope="col">Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in orders_list %}
+            <tr>
+              <th scope="row">{{item.OrderID}}</th>
+              <td>{{item.Name}}</td>
+              <td>{{item.WhatsappNo}}</td>
+              <td>{{item.Address}}</td>
+              <td>{{item.Courier}}</td>
+              <td>{{item.No_Of_Items}}</td>
+              <td>{{item.OrderStatus}}</td>
+              <td>{{item.TrackingId}}</td>
+              <td><img src="/media/{{item.file}}" alt="" height="100" width="100"></td>
+              <td>{{item.Date}}</td>
+            </tr>
+            {% endfor %}
+            
+          </tbody>
+      </table>
+ </div> -->

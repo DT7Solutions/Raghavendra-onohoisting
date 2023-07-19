@@ -1,0 +1,66 @@
+<form method="POST" enctype="multipart/form-data" autocomplete="off">
+          {% csrf_token %}
+          
+        
+          <div class="modal-body">
+            {% if profile %}
+            <div class="row">
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="Name" name="Name" requiured placeholder="Name" value="{{profile.firstname}}">
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control" id="WhatsappNo" name="WhatsappNo" max="10" required   placeholder="WhatsappNo" >
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="phone" class="form-control"  id="ContactNo" name="ContactNo" max="10" requiured placeholder="ContactNo" value="{{profile.phonenumber}}" >
+              </div>
+             
+          </div>
+       
+          <div class="row">
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control"    id="Address" name="Address"   placeholder="Address" value="{{profile.address}}">
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control"  id="streetname" name="streetname"  placeholder="Street Name"  >
+              </div>
+              <div class="form-group col-sm-12 col-lg-4">
+                <input type="text" class="form-control"  id="City" name="City"  placeholder="City" value="{{profile.city}}">
+              </div>
+          </div>
+          <div class="row">
+            <div class="form-group col-sm-12 col-lg-4">
+              <input type="text" class="form-control"    id="State" name="State" placeholder="State Name" value="{{profile.state}}">
+            </div>
+            <div class="form-group col-sm-12 col-lg-4">
+              <input type="text" class="form-control"  id="Postalcode" name="Postalcode"  placeholder="Postalcode" value="{{profile.zip_code}}">
+            </div>
+            <div class="form-group col-sm-12 col-lg-4">
+              <select class="custom-select"  name="Courier"  id="Courier">
+                <option selected>Choose. type Courier</option>
+                <option value="Dtdtc">DTDC</option>
+                <option value="India post">INDIA POST</option>
+                
+              </select>
+            </div>
+          </div>
+          {% endif %}
+          <div class="row">
+            <div class="form-group col-sm-12 col-lg-4">
+              <input type="text" class="form-control"   id="TransactionNo" name="TransactionNo" placeholder="PhonePay/GooglePay UTRNo">
+            </div>
+          
+            <div class="form-group col-sm-12 col-lg-4">
+              <input type="number" class="form-control"  id="No_of_items" name="No_of_items" onkeyup="createFields()" min="1" max="10"  placeholder="No of items" onkeyup="updateFileInputs()">
+            </div>
+            <!-- <div class="form-group col-sm-12 col-lg-4">
+              <input name="image_file" type="file" id="image_file"  class="form-control"   accept=".jpg,.jpeg,.pdf,.png"   placeholder="upload image" >
+            </div> -->
+          </div>
+          <div class="row">
+            <div id="fieldsContainer" class="row"></div>
+          </div>
+          
+            <button type="submit" class="btn btn-primary">Submit</button>
+        
+        </form>

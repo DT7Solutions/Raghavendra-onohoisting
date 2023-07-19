@@ -1,0 +1,15 @@
+#fieldsContainer input{
+   border: 1px solid #cfd1d3;
+   border-radius: 4px;
+}
+#fieldsContainer {
+    margin-left: 15px !important;
+}
+#fieldsContainer input[type="file"] {
+    border: none !important;
+}
+
+.size-label,.coor-label,.Image-label {
+    margin-left: 10px;
+    margin-right: 6px;
+}

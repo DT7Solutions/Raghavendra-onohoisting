@@ -1,0 +1,2096 @@
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/myapp/urls.py", line 25, in <module>
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+NameError: name 'settings' is not defined
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/myapp/urls.py", line 25, in <module>
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+NameError: name 'settings' is not defined
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/myapp/urls.py", line 25, in <module>
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+NameError: name 'settings' is not defined
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/myapp/urls.py", line 25, in <module>
+    ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+NameError: name 'settings' is not defined
+Not Found: /
+Not Found: /static/admin/css/base.css
+Not Found: /static/admin/css/login.css
+Not Found: /static/admin/css/responsive.css
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Not Found: /
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/myapp/urls.py", line 27
+    path(r'^$', TemplateView.as_view(template_name='static_pages/index.html'), name='home'),
+       ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/myapp/urls.py", line 27
+    path(r'^$', TemplateView.as_view(template_name='static_pages/index.html'), name='home'),
+       ^
+SyntaxError: invalid syntax
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/myapp/urls.py", line 22, in <module>
+    from .views import home
+ModuleNotFoundError: No module named 'myapp.views'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/myapp/urls.py", line 22, in <module>
+    from .views import home
+ModuleNotFoundError: No module named 'myapp.views'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/myapp/urls.py", line 22, in <module>
+    from .views import home
+ModuleNotFoundError: No module named 'myapp.views'
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 14, in home
+    return render(request ,"static_ages/home.html")
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: static_ages/home.html
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: uifiles/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 14, in home
+    return render(request ,"static_pages/home.html")
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: uifiles/base.html
+Internal Server Error: /
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 61, in render
+    return self.template.render(context)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/base.py", line 937, in render
+    bit = node.render_annotated(context)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/base.py", line 904, in render_annotated
+    return self.render(context)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 127, in render
+    compiled_parent = self.get_parent(context)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 124, in get_parent
+    return self.find_template(parent, context)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/loader_tags.py", line 104, in find_template
+    template_name, skip=history,
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/engine.py", line 130, in find_template
+    raise TemplateDoesNotExist(name, tried=tried)
+django.template.exceptions.TemplateDoesNotExist: uifiles/base.html
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 14, in home
+    return render(request ,"static_pages/home.html")
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 63, in render
+    reraise(exc, self.backend)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/backends/django.py", line 84, in reraise
+    raise new from exc
+django.template.exceptions.TemplateDoesNotExist: uifiles/base.html
+Not Found: /static/vendor/bootstrap/css/bootstrap.min.css
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /static/vendor/css-hamburgers/hamburgers.min.css
+Not Found: /static/css/util.css
+Not Found: /static/vendor/animate/animate.css
+Not Found: /static/vendor/select2/select2.min.css
+Not Found: /static/css/style.css
+Not Found: /static/css/main.css
+Not Found: /static/vendor/jquery/jquery-3.2.1.min.js
+Not Found: /static/vendor/bootstrap/js/popper.js
+Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+Not Found: /static/vendor/select2/select2.min.js
+Not Found: /static/vendor/tilt/tilt.jquery.min.js
+Not Found: /static/js/main.js
+Not Found: /static/images/img.png
+Not Found: /images/icons/favicon.ico
+Not Found: /static/vendor/bootstrap/css/bootstrap.min.css
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /static/vendor/animate/animate.css
+Not Found: /static/vendor/css-hamburgers/hamburgers.min.css
+Not Found: /static/vendor/select2/select2.min.css
+Not Found: /static/vendor/jquery/jquery-3.2.1.min.js
+Not Found: /static/vendor/bootstrap/js/popper.js
+Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+Not Found: /static/vendor/tilt/tilt.jquery.min.js
+Not Found: /static/vendor/select2/select2.min.js
+Not Found: /static/images/img.png
+Not Found: /images/bg-image.jpg
+Not Found: /static/fonts/poppins/Poppins-Bold.ttf
+Not Found: /static/fonts/poppins/Poppins-Medium.ttf
+Not Found: /static/fonts/montserrat/Montserrat-Bold.ttf
+Not Found: /static/fonts/poppins/Poppins-Regular.ttf
+Not Found: /static/vendor/bootstrap/css/bootstrap.min.css
+Not Found: /static/vendor/css-hamburgers/hamburgers.min.css
+Not Found: /static/vendor/animate/animate.css
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /static/vendor/select2/select2.min.css
+Not Found: /static/vendor/jquery/jquery-3.2.1.min.js
+Not Found: /static/vendor/bootstrap/js/popper.js
+Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+Not Found: /static/vendor/select2/select2.min.js
+Not Found: /static/vendor/tilt/tilt.jquery.min.js
+Not Found: /static/images/img.png
+Not Found: /images/bg-image.jpg
+Not Found: /static/fonts/poppins/Poppins-Bold.ttf
+Not Found: /static/fonts/poppins/Poppins-Medium.ttf
+Not Found: /static/fonts/montserrat/Montserrat-Bold.ttf
+Not Found: /static/fonts/poppins/Poppins-Regular.ttf
+Not Found: /images/icons/favicon.ico
+Not Found: /static/vendor/bootstrap/css/bootstrap.min.css
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /static/vendor/select2/select2.min.css
+Not Found: /static/vendor/css-hamburgers/hamburgers.min.css
+Not Found: /static/vendor/animate/animate.css
+Not Found: /static/vendor/jquery/jquery-3.2.1.min.js
+Not Found: /static/vendor/bootstrap/js/popper.js
+Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+Not Found: /static/vendor/select2/select2.min.js
+Not Found: /static/vendor/tilt/tilt.jquery.min.js
+Not Found: /static/images/img.png
+Not Found: /images/bg-image.jpg
+Not Found: /static/fonts/poppins/Poppins-Bold.ttf
+Not Found: /static/fonts/poppins/Poppins-Medium.ttf
+Not Found: /static/fonts/montserrat/Montserrat-Bold.ttf
+Not Found: /static/fonts/poppins/Poppins-Regular.ttf
+Not Found: /static/vendor/bootstrap/css/bootstrap.min.css
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /static/vendor/animate/animate.css
+Not Found: /static/vendor/css-hamburgers/hamburgers.min.css
+Not Found: /static/vendor/select2/select2.min.css
+Not Found: /static/vendor/jquery/jquery-3.2.1.min.js
+Not Found: /static/vendor/bootstrap/js/popper.js
+Not Found: /static/vendor/bootstrap/js/bootstrap.min.js
+Not Found: /static/vendor/select2/select2.min.js
+Not Found: /static/vendor/tilt/tilt.jquery.min.js
+Not Found: /static/images/img.png
+Not Found: /images/bg-image.jpg
+Not Found: /static/fonts/poppins/Poppins-Bold.ttf
+Not Found: /static/fonts/poppins/Poppins-Medium.ttf
+Not Found: /static/fonts/montserrat/Montserrat-Bold.ttf
+Not Found: /static/fonts/poppins/Poppins-Regular.ttf
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /register/
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /images/icons/favicon.ico
+Not Found: /images/icons/favicon.ico
+Not Found: /images/icons/favicon.ico
+Not Found: /images/icons/favicon.ico
+Not Found: /images/icons/favicon.ico
+Not Found: /images/icons/favicon.ico
+Not Found: /images/icons/favicon.ico
+Not Found: /images/icons/favicon.ico
+Not Found: /images/icons/favicon.ico
+Not Found: /images/icons/favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 15, in <module>
+    import MySQLdb as Database
+ModuleNotFoundError: No module named 'MySQLdb'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ragaven1/myapp/passenger_wsgi.py", line 31, in <module>
+    application = get_wsgi_application()
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/apps/registry.py", line 112, in populate
+    app_config.import_models()
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/contrib/auth/models.py", line 2, in <module>
+    from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/contrib/auth/base_user.py", line 47, in <module>
+    class AbstractBaseUser(models.Model):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 101, in __new__
+    new_class.add_to_class('_meta', Options(meta, app_label))
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 305, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/options.py", line 203, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/__init__.py", line 33, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/utils.py", line 202, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/utils.py", line 110, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 20, in <module>
+    ) from err
+django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module.
+Did you install mysqlclient?
+[UID:3425][50535] Child process with pid: 50595 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 15, in <module>
+    import MySQLdb as Database
+ModuleNotFoundError: No module named 'MySQLdb'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ragaven1/myapp/passenger_wsgi.py", line 31, in <module>
+    application = get_wsgi_application()
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/apps/registry.py", line 112, in populate
+    app_config.import_models()
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/contrib/auth/models.py", line 2, in <module>
+    from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/contrib/auth/base_user.py", line 47, in <module>
+    class AbstractBaseUser(models.Model):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 101, in __new__
+    new_class.add_to_class('_meta', Options(meta, app_label))
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 305, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/options.py", line 203, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/__init__.py", line 33, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/utils.py", line 202, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/utils.py", line 110, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 20, in <module>
+    ) from err
+django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module.
+Did you install mysqlclient?
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 15, in <module>
+    import MySQLdb as Database
+ModuleNotFoundError: No module named 'MySQLdb'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ragaven1/myapp/passenger_wsgi.py", line 31, in <module>
+    application = get_wsgi_application()
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/apps/registry.py", line 112, in populate
+    app_config.import_models()
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/contrib/auth/models.py", line 2, in <module>
+    from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/contrib/auth/base_user.py", line 47, in <module>
+    class AbstractBaseUser(models.Model):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 101, in __new__
+    new_class.add_to_class('_meta', Options(meta, app_label))
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 305, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/options.py", line 203, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/__init__.py", line 33, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/utils.py", line 202, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/utils.py", line 110, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 20, in <module>
+    ) from err
+django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module.
+Did you install mysqlclient?
+[UID:3425][54148] Child process with pid: 54311 was killed by signal: 15, core dump: 0
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 15, in <module>
+    import MySQLdb as Database
+ModuleNotFoundError: No module named 'MySQLdb'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ragaven1/myapp/passenger_wsgi.py", line 31, in <module>
+    application = get_wsgi_application()
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/apps/registry.py", line 112, in populate
+    app_config.import_models()
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/apps/config.py", line 198, in import_models
+    self.models_module = import_module(models_module_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/contrib/auth/models.py", line 2, in <module>
+    from django.contrib.auth.base_user import AbstractBaseUser, BaseUserManager
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/contrib/auth/base_user.py", line 47, in <module>
+    class AbstractBaseUser(models.Model):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 101, in __new__
+    new_class.add_to_class('_meta', Options(meta, app_label))
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/base.py", line 305, in add_to_class
+    value.contribute_to_class(cls, name)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/options.py", line 203, in contribute_to_class
+    self.db_table = truncate_name(self.db_table, connection.ops.max_name_length())
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/__init__.py", line 33, in __getattr__
+    return getattr(connections[DEFAULT_DB_ALIAS], item)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/utils.py", line 202, in __getitem__
+    backend = load_backend(db['ENGINE'])
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/utils.py", line 110, in load_backend
+    return import_module('%s.base' % backend_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/backends/mysql/base.py", line 20, in <module>
+    ) from err
+django.core.exceptions.ImproperlyConfigured: Error loading MySQLdb module.
+Did you install mysqlclient?
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+[UID:3425][63936] Child process with pid: 64087 was killed by signal: 15, core dump: 0
+Forbidden (CSRF token missing or incorrect.): /admin/login/
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 860, in get_code
+  File "<frozen importlib._bootstrap_external>", line 791, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/myapp/urls.py", line 27
+    path('forgotpassword/',Updatepassword, name='forgotpassword'),
+       ^
+SyntaxError: invalid syntax
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/myapp/urls.py", line 26, in <module>
+    path('', include('ragavendra_store.urls')),
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/ragavendra_store/urls.py", line 4, in <module>
+    from ragavendra_store.views import home,createAccount,Updatepassword,editprofile,orders,logout
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 6, in <module>
+    import requests
+ModuleNotFoundError: No module named 'requests'
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/myapp/urls.py", line 26, in <module>
+    path('', include('ragavendra_store.urls')),
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/ragavendra_store/urls.py", line 4, in <module>
+    from ragavendra_store.views import home,createAccount,Updatepassword,editprofile,orders,logout
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 6, in <module>
+    import requests
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/requests/__init__.py", line 43, in <module>
+    import urllib3
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/urllib3/__init__.py", line 42, in <module>
+    "urllib3 v2.0 only supports OpenSSL 1.1.1+, currently "
+ImportError: urllib3 v2.0 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'OpenSSL 1.0.2k-fips  26 Jan 2017'. See: https://github.com/urllib3/urllib3/issues/2168
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/myapp/urls.py", line 26, in <module>
+    path('', include('ragavendra_store.urls')),
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/ragavendra_store/urls.py", line 4, in <module>
+    from ragavendra_store.views import home,createAccount,Updatepassword,editprofile,orders,logout
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 6, in <module>
+    import requests
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/requests/__init__.py", line 43, in <module>
+    import urllib3
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/urllib3/__init__.py", line 42, in <module>
+    "urllib3 v2.0 only supports OpenSSL 1.1.1+, currently "
+ImportError: urllib3 v2.0 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'OpenSSL 1.0.2k-fips  26 Jan 2017'. See: https://github.com/urllib3/urllib3/issues/2168
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 111, in _get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 491, in resolve
+    for pattern in self.url_patterns:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 533, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/functional.py", line 37, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/resolvers.py", line 526, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/myapp/urls.py", line 26, in <module>
+    path('', include('ragavendra_store.urls')),
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/opt/alt/python37/lib64/python3.7/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1006, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/ragaven1/myapp/ragavendra_store/urls.py", line 4, in <module>
+    from ragavendra_store.views import home,createAccount,Updatepassword,editprofile,orders,logout
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 8, in <module>
+    from twilio.rest import Client
+ModuleNotFoundError: No module named 'twilio'
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 47, in createAccount
+    return render(request ,"uifiles/create-account.html")
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: uifiles/create-account.html
+Internal Server Error: /register/
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 47, in createAccount
+    return render(request ,"static_pages/create-account.html")
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/shortcuts.py", line 36, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/template/loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: uifiles/create-account.html
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /register/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Orders.Date received a naive datetime (2023-06-10 06:06:24.085751) while time zone support is active.
+  RuntimeWarning)
+Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 82, in orders
+    send_whatsapp_message(message=message,whatsapp_no=whatsapp_No)
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 123, in send_whatsapp_message
+    headers = {"Authorization": settings.WHATSUP_TOKEN}
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/conf/__init__.py", line 58, in __getattr__
+    val = getattr(self._wrapped, name)
+AttributeError: 'Settings' object has no attribute 'WHATSUP_TOKEN'
+/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Orders.Date received a naive datetime (2023-06-10 06:10:42.320633) while time zone support is active.
+  RuntimeWarning)
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /static/vendor/bootstrap/js/popper.js.map
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /static/vendor/bootstrap/js/popper.js.map
+Not Found: /images/icons/favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+Not Found: /images/bg-image.jpg
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][47724] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /register/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Forbidden (CSRF token missing or incorrect.): /
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /images/icons/favicon.ico
+Not Found: /favicon.ico
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /register/images/icons/favicon.ico
+Not Found: /images/icons/favicon.ico
+Not Found: /favicon.ico
+Not Found: /new.zip
+Not Found: /html.zip
+Not Found: /orders.ragavendratextiles.com.zip
+Not Found: /web/.env
+Not Found: /server-status
+Not Found: /.apache.env
+Not Found: /apps/.env
+Not Found: /ci/.env
+Not Found: /source.zip
+Not Found: /v2.zip
+Not Found: /api/v1/pay
+Not Found: /api/v1/status
+Not Found: /.web.env
+Not Found: /dev.env
+Forbidden (CSRF cookie not set.): /
+Not Found: /backend.zip
+[UID:3425][11353] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /app.env
+Not Found: /app/.env
+Not Found: /beta.zip
+Not Found: /run.zip
+Not Found: /.django.env
+[UID:3425][11353] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][11353] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][11353] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][11353] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /api/v1/user
+Not Found: /src.zip
+Not Found: /.laravel.env
+Not Found: /upload.zip
+Not Found: /.old.env
+Not Found: /core.zip
+Not Found: /public.zip
+Not Found: /.env.example
+Not Found: /config.env
+Not Found: /_ignition/execute-solution
+Not Found: /script.zip
+Not Found: /lab/.env
+Not Found: /databases.zip
+Not Found: /home.zip
+Not Found: /config/.env
+Not Found: /assets/.env
+Not Found: /secrets.json
+Not Found: /ecosystem.config.json
+Not Found: /wallet.json
+Not Found: /admin.zip
+Not Found: /.env
+Not Found: /config.zip
+Not Found: /old.zip
+Not Found: /wallets.json
+Not Found: /api/.env
+Not Found: /cron/.env
+Not Found: /auth.json
+Not Found: /accounts.json
+Not Found: /configuration.zip
+Not Found: /wp-content.zip
+Not Found: /.env.production
+Not Found: /.aws/credentials
+Not Found: /.vscode/sftp.json
+Not Found: /system.zip
+Not Found: /conf.json
+Not Found: /tools/.env
+Not Found: /config/prod.json
+Not Found: /v1.zip
+Not Found: /error.zip
+Not Found: /.postgres.env
+Not Found: /exapi/.env
+Not Found: /config/config.json
+[UID:3425][11353] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /bootstrap.zip
+Not Found: /token.json
+Not Found: /.well-known.zip
+Not Found: /module.zip
+Not Found: /config.ini
+[UID:3425][11353] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+Not Found: /saas/.env
+[UID:3425][11353] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][11353] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /site/.env
+[UID:3425][11353] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /keys.json
+Not Found: /account.json
+Not Found: /orders.ragavendratextiles.com.tar.gz
+Not Found: /main.zip
+Not Found: /database.json
+Not Found: /backup.zip
+Not Found: /.env.dev
+Not Found: /v2/.env
+Not Found: /env.ini
+Not Found: /configuration.json
+Not Found: /api/index.php/v1/config/application
+Not Found: /.zip
+Not Found: /htdocs.zip
+Not Found: /well-known.zip
+Not Found: /config.json
+Not Found: /.mysql.env
+Not Found: /.env.bak
+Not Found: /.db.env
+Not Found: /sftp-config.json
+Not Found: /secret.json
+Not Found: /db.json
+Not Found: /dev.zip
+Not Found: /sql.zip
+Not Found: /lib.zip
+Not Found: /.env.remote
+Not Found: /vendor/.env
+Not Found: /.database.env
+Not Found: /key.json
+Not Found: /backups.zip
+Not Found: /api.zip
+Not Found: /configs.zip
+Not Found: /.env.copy
+Not Found: /app.config.env
+Not Found: /.env.staging
+Not Found: /sites/all/libraries/mailchimp/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /wp-content/plugins/jekyll-exporter/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /wp-content/plugins/cloudflare/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /scripts.zip
+Not Found: /work.zip
+Not Found: /controller.zip
+Not Found: /uploads/.env
+Not Found: /sitemaps/.env
+Not Found: /.env.local
+Not Found: /app.zip
+Not Found: /sites/default/libraries/mailchimp/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /wp-content/wp-plugins/jekyll-exporter/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /db.zip
+Not Found: /wwwroot.zip
+Not Found: /web-variables.env
+Not Found: /main.env
+Not Found: /dotenv.env
+Not Found: /wp-content/plugins/dzs-videogallery/class_parts/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /dashboard.zip
+Not Found: /exports.zip
+Not Found: /code.zip
+Not Found: /.env.backup
+Not Found: /.local
+Not Found: /.nginx.env
+Not Found: /debug/default/view
+Not Found: /cgi-bin.zip
+Not Found: /2022.zip
+Not Found: /install.zip
+Not Found: /core/app/.env
+Not Found: /.elastic.env
+Not Found: /database/.env
+Not Found: /2021.zip
+Not Found: /public_html.zip
+Not Found: /www.zip
+Not Found: /.env.new
+Not Found: /admin/.env
+Not Found: /.debug.env
+Not Found: /application.zip
+Not Found: /database.zip
+Not Found: /wp-config.zip
+Not Found: /v1/.env
+Not Found: /.remote
+Not Found: /env.dist
+Not Found: /tokenlite.zip
+Not Found: /framework.zip
+Not Found: /include.zip
+Not Found: /laravel/.env
+Not Found: /core/.env
+Not Found: /administrator/.env
+Not Found: /uploads.zip
+Not Found: /home1.zip
+Not Found: /root.zip
+Not Found: /myconf.env
+Not Found: /.debug
+Not Found: /cronlab/.env
+Not Found: /orders.ragavendratextiles.com.tar
+Not Found: /.env.development
+Not Found: /lib/.env
+Not Found: /.env.prod
+Not Found: /.production
+Not Found: /public/.env
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /wp-content.zip
+Not Found: /.well-known.zip
+Not Found: /well-known.zip
+Not Found: /server-status
+Not Found: /env.dist
+Not Found: /web-variables.env
+Not Found: /env.ini
+Not Found: /script.zip
+Not Found: /api/v1/pay
+Not Found: /api/v1/user
+Not Found: /api/v1/status
+Not Found: /htdocs.zip
+Not Found: /www.zip
+Not Found: /core/app/.env
+Not Found: /.web.env
+Not Found: /config.env
+Forbidden (CSRF cookie not set.): /
+Not Found: /old.zip
+Not Found: /dashboard.zip
+Not Found: /lib.zip
+Not Found: /dotenv.env
+Not Found: /config/.env
+Not Found: /saas/.env
+Not Found: /.zip
+Not Found: /beta.zip
+Not Found: /root.zip
+Not Found: /.env.new
+Not Found: /ci/.env
+Not Found: /.env.example
+Not Found: /_ignition/execute-solution
+Not Found: /v2.zip
+Not Found: /main.zip
+Not Found: /orders.ragavendratextiles.com.tar.gz
+Not Found: /sitemaps/.env
+Not Found: /site/.env
+Not Found: /.database.env
+Not Found: /token.json
+Not Found: /secrets.json
+Not Found: /database.zip
+Not Found: /wallet.json
+Not Found: /run.zip
+Not Found: /.env.bak
+Not Found: /cgi-bin.zip
+Not Found: /.local
+Not Found: /.debug.env
+Not Found: /key.json
+Not Found: /account.json
+Not Found: /auth.json
+Not Found: /core.zip
+Not Found: /exports.zip
+Not Found: /cronlab/.env
+Not Found: /.env.development
+Not Found: /.env.local
+Not Found: /orders.ragavendratextiles.com.zip
+Not Found: /ecosystem.config.json
+Not Found: /config/prod.json
+Not Found: /sftp-config.json
+Not Found: /uploads.zip
+Not Found: /controller.zip
+Not Found: /dev.env
+Not Found: /.env.dev
+Not Found: /public_html.zip
+Not Found: /.env.production
+Not Found: /accounts.json
+Not Found: /configuration.json
+Not Found: /api/index.php/v1/config/application
+Not Found: /public.zip
+Not Found: /dev.zip
+Not Found: /admin.zip
+Not Found: /main.env
+Not Found: /core/.env
+Not Found: /app/.env
+Not Found: /database.json
+Not Found: /config/config.json
+Not Found: /databases.zip
+Not Found: /db.json
+Not Found: /api.zip
+Not Found: /.aws/credentials
+Not Found: /.env.staging
+Not Found: /configs.zip
+Not Found: /.laravel.env
+Not Found: /config.json
+Not Found: /wallets.json
+Not Found: /wp-config.zip
+Not Found: /backup.zip
+Not Found: /conf.json
+Not Found: /error.zip
+Not Found: /web/.env
+Not Found: /.db.env
+Not Found: /config.ini
+Not Found: /secret.json
+Not Found: /.vscode/sftp.json
+Not Found: /public/.env
+Not Found: /database/.env
+Not Found: /db.zip
+Not Found: /keys.json
+Not Found: /config.zip
+Not Found: /html.zip
+Not Found: /.env.remote
+Not Found: /wp-content/wp-plugins/jekyll-exporter/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /sites/default/libraries/mailchimp/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /system.zip
+Not Found: /lib/.env
+Not Found: /exapi/.env
+Not Found: /tools/.env
+Not Found: /framework.zip
+Not Found: /wp-content/plugins/dzs-videogallery/class_parts/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /bootstrap.zip
+Not Found: /wp-content/plugins/cloudflare/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /cron/.env
+Not Found: /v2/.env
+Not Found: /.env.copy
+Not Found: /sql.zip
+Not Found: /sites/all/libraries/mailchimp/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /wp-content/plugins/jekyll-exporter/vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /upload.zip
+Not Found: /v1.zip
+Not Found: /.production
+Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+Not Found: /uploads/.env
+Not Found: /vendor/.env
+Not Found: /backups.zip
+Not Found: /home.zip
+Not Found: /home1.zip
+Not Found: /debug/default/view
+Not Found: /.env
+Not Found: /v1/.env
+Not Found: /lab/.env
+Not Found: /src.zip
+Not Found: /code.zip
+Not Found: /scripts.zip
+Not Found: /assets/.env
+Not Found: /.debug
+Not Found: /.apache.env
+Not Found: /configuration.zip
+Not Found: /2021.zip
+Not Found: /install.zip
+Not Found: /app.env
+Not Found: /work.zip
+Not Found: /app.config.env
+Not Found: /source.zip
+Not Found: /apps/.env
+Not Found: /new.zip
+Not Found: /.mysql.env
+Not Found: /include.zip
+Not Found: /.elastic.env
+Not Found: /2022.zip
+Not Found: /myconf.env
+Not Found: /module.zip
+Not Found: /admin/.env
+Not Found: /laravel/.env
+Not Found: /app.zip
+Not Found: /wwwroot.zip
+Not Found: /.old.env
+Not Found: /tokenlite.zip
+Not Found: /.postgres.env
+Not Found: /.nginx.env
+Not Found: /backend.zip
+Not Found: /application.zip
+Not Found: /.remote
+Not Found: /orders.ragavendratextiles.com.tar
+Not Found: /.env.backup
+Not Found: /.env.prod
+Not Found: /api/.env
+Not Found: /administrator/.env
+Not Found: /.django.env
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /images/bg-image.jpg
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /images/icons/favicon.ico
+Not Found: /forgotpassword/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /forgotpassword/images/icons/favicon.ico
+Not Found: /forgotpassword/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /register/images/icons/favicon.ico
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /forgotpassword/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /forgotpassword/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /favicon.ico
+Not Found: /forgotpassword/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /forgotpassword/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /forgotpassword/images/icons/favicon.ico
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /register/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /register/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Orders.Date received a naive datetime (2023-06-12 06:50:46.157478) while time zone support is active.
+  RuntimeWarning)
+Not Found: /favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][18474] packetLen < 0
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /accounts/login/
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Orders.Date received a naive datetime (2023-06-12 06:50:46.157478) while time zone support is active.
+  RuntimeWarning)
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][19738] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+[UID:3425][60912] Child process with pid: 61049 was killed by signal: 15, core dump: 0
+[UID:3425][60912] Child process with pid: 61050 was killed by signal: 15, core dump: 0
+[UID:3425][60912] Child process with pid: 61048 was killed by signal: 15, core dump: 0
+[UID:3425][60912] Child process with pid: 61052 was killed by signal: 15, core dump: 0
+[UID:3425][60912] Child process with pid: 61053 was killed by signal: 15, core dump: 0
+[UID:3425][60912] Child process with pid: 61009 was killed by signal: 15, core dump: 0
+OSError: LSAPI: File error
+Not Found: /Dashboard.html
+Not Found: /dist/js/bootstrap.bundle.min.js
+Not Found: /dist/js/bootstrap.min.js
+Not Found: /dist/umd/popper.min.js
+Not Found: //code.jquery.com/jquery-3.5.1.slim.min.js
+Not Found: /dist/js/bootstrap.min.js
+Not Found: //cdn.js
+Not Found: //cdn.jsdelivr.net/npm/popper.js
+Not Found: /dist/js/bootstrap.bundle.min.js
+Not Found: /dist/umd/popper.min.js
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /images/bg-image.jpg
+[UID:3425][40176] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /images/icons/favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'image_file0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 75, in orders
+    up_file = request.FILES[image]
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'image_file0'
+Not Found: /favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Orders.Date received a naive datetime (2023-06-13 08:50:00.035973) while time zone support is active.
+  RuntimeWarning)
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /Dashboard.html
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: //code.jquery.com/jquery-3.5.1.slim.min.js
+Not Found: /dist/js/bootstrap.bundle.min.js
+Not Found: /dist/umd/popper.min.js
+Not Found: //cdn.jsdelivr.net/npm/popper.js
+Not Found: /dist/js/bootstrap.min.js
+Not Found: //cdn.js
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /accounts/login/
+Not Found: /accounts/login/
+Not Found: /apple-touch-icon-120x120-precomposed.png
+Not Found: /apple-touch-icon-120x120-precomposed.png
+Not Found: /apple-touch-icon-120x120.png
+Not Found: /apple-touch-icon-120x120.png
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon-120x120-precomposed.png
+Not Found: /apple-touch-icon-120x120-precomposed.png
+Not Found: /apple-touch-icon-120x120.png
+Not Found: /apple-touch-icon-120x120.png
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon.png
+Not Found: /apple-touch-icon.png
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /accounts/login/
+Not Found: /apple-touch-icon-120x120-precomposed.png
+Not Found: /apple-touch-icon-120x120.png
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon.png
+Not Found: /favicon.ico
+Not Found: /apple-touch-icon-120x120-precomposed.png
+Not Found: /apple-touch-icon-120x120.png
+Not Found: /apple-touch-icon-precomposed.png
+Not Found: /apple-touch-icon.png
+Not Found: /favicon.ico
+Not Found: /wp-includes/ID3/license.txt
+Not Found: /feed/
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /wp-includes/ID3/license.txt
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /2021/wp-includes/wlwmanifest.xml
+Not Found: /feed/
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /2021/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /register/images/icons/favicon.ico
+OSError: LSAPI: Socket read/write error
+Not Found: /robots.txt
+Not Found: /wp-includes/wlwmanifest.xml
+Not Found: /xmlrpc.php
+Not Found: /blog/wp-includes/wlwmanifest.xml
+Not Found: /web/wp-includes/wlwmanifest.xml
+Not Found: /wordpress/wp-includes/wlwmanifest.xml
+Not Found: /website/wp-includes/wlwmanifest.xml
+Not Found: /wp/wp-includes/wlwmanifest.xml
+Not Found: /news/wp-includes/wlwmanifest.xml
+Not Found: /2020/wp-includes/wlwmanifest.xml
+Not Found: /2019/wp-includes/wlwmanifest.xml
+Not Found: /shop/wp-includes/wlwmanifest.xml
+Not Found: /wp1/wp-includes/wlwmanifest.xml
+Not Found: /test/wp-includes/wlwmanifest.xml
+Not Found: /wp2/wp-includes/wlwmanifest.xml
+Not Found: /site/wp-includes/wlwmanifest.xml
+Not Found: /cms/wp-includes/wlwmanifest.xml
+Not Found: /sito/wp-includes/wlwmanifest.xml
+Not Found: /images/icons/favicon.ico
+Not Found: /favicon.ico
+Not Found: /images/icons/favicon.ico
+Not Found: /favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /register/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 69, in orders
+    for item in range(int(No_of_items)):
+ValueError: invalid literal for int() with base 10: ''
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/images/icons/favicon.ico
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Orders.Date received a naive datetime (2023-06-27 08:06:25.788042) while time zone support is active.
+  RuntimeWarning)
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /images/bg-image.jpg
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][2834] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /images/icons/favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Not Found: /favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][24099] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /images/icons/favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Not Found: /favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/images/icons/favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 117, in _get_response
+    response = middleware_method(request, callback, callback_args, callback_kwargs)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/middleware/csrf.py", line 294, in process_view
+    request_csrf_token = request.POST.get('csrfmiddlewaretoken', '')
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/wsgi.py", line 111, in _get_post
+    self._load_post_and_files()
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/http/request.py", line 310, in _load_post_and_files
+    self._post, self._files = self.parse_file_upload(self.META, data)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/http/request.py", line 269, in parse_file_upload
+    return parser.parse()
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/http/multipartparser.py", line 232, in parse
+    for chunk in field_stream:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/http/multipartparser.py", line 373, in __next__
+    output = next(self._producer)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/http/multipartparser.py", line 505, in __next__
+    for bytes in stream:
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/http/multipartparser.py", line 373, in __next__
+    output = next(self._producer)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/http/multipartparser.py", line 436, in __next__
+    data = self.flo.read(self.chunk_size)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/http/request.py", line 342, in read
+    return self._stream.read(*args, **kwargs)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/wsgi.py", line 42, in read
+    result = self.buffer + self._read_limited(size - len(self.buffer))
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/wsgi.py", line 30, in _read_limited
+    result = self.stream.read(size)
+SystemError: <method 'read' of 'lsapi_wsgi.InputStream' objects> returned NULL without setting an error
+/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Orders.Date received a naive datetime (2023-06-27 09:21:10.989146) while time zone support is active.
+  RuntimeWarning)
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+OSError: LSAPI: Socket read/write error
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Orders.Date received a naive datetime (2023-06-27 09:21:10.989146) while time zone support is active.
+  RuntimeWarning)
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+OSError: LSAPI: Socket read/write error
+/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Orders.Date received a naive datetime (2023-06-27 09:21:10.989146) while time zone support is active.
+  RuntimeWarning)
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 7, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][60195] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /images/icons/favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'image_file0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 75, in orders
+    up_file = request.FILES[image]
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'image_file0'
+Not Found: /favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Orders.Date received a naive datetime (2023-06-27 09:21:10.989146) while time zone support is active.
+  RuntimeWarning)
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /accounts/login/
+Not Found: /favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+[UID:3425][20089] Child process with pid: 56588 was killed by signal: 15, core dump: 0
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/datastructures.py", line 77, in __getitem__
+    list_ = super().__getitem__(key)
+KeyError: 'image_file0'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 75, in orders
+    up_file = request.FILES[image]
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/utils/datastructures.py", line 79, in __getitem__
+    raise MultiValueDictKeyError(key)
+django.utils.datastructures.MultiValueDictKeyError: 'image_file0'
+/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Orders.Date received a naive datetime (2023-06-27 10:02:07.688162) while time zone support is active.
+  RuntimeWarning)
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Orders.Date received a naive datetime (2023-06-27 10:02:07.688162) while time zone support is active.
+  RuntimeWarning)
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+[UID:3425][17473] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][17473] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][17473] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][17473] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][17473] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][17473] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][17473] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][17473] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][17473] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][17473] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][17473] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][17473] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][17473] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][17473] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+[UID:3425][17473] Reached max children process limit: 6, extra: 2, current: 8, busy: 8, please increase LSAPI_CHILDREN.
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /register/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /forgotpassword/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /forgotpassword/images/icons/favicon.ico
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /forgotpassword/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+OSError: LSAPI: Socket read/write error
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Orders.Date received a naive datetime (2023-06-28 06:08:03.631388) while time zone support is active.
+  RuntimeWarning)
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Orders.Date received a naive datetime (2023-06-28 14:37:27.837490) while time zone support is active.
+  RuntimeWarning)
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /forgotpassword/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /forgotpassword/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /register/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/icons/favicon.ico
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/db/models/fields/__init__.py:1421: RuntimeWarning: DateTimeField Orders.Date received a naive datetime (2023-06-29 06:28:33.422762) while time zone support is active.
+  RuntimeWarning)
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /accounts/login/
+Not Found: /favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Forbidden (CSRF token missing or incorrect.): /admin/login/
+Forbidden (CSRF token missing or incorrect.): /admin/login/
+Forbidden (CSRF token missing or incorrect.): /admin/login/
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /images/bg-image.jpg
+Not Found: /images/icons/favicon.ico
+Not Found: /forgotpassword/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /forgotpassword/images/icons/favicon.ico
+Not Found: /register/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /register/images/icons/favicon.ico
+Not Found: /{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /orders/images/icons/favicon.ico
+Internal Server Error: /orders/
+Traceback (most recent call last):
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/core/handlers/base.py", line 124, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/ragaven1/virtualenv/myapp/3.7/lib/python3.7/site-packages/django/contrib/auth/decorators.py", line 21, in _wrapped_view
+    return view_func(request, *args, **kwargs)
+  File "/home/ragaven1/myapp/ragavendra_store/views.py", line 69, in orders
+    for item in range(int(No_of_items)):
+ValueError: invalid literal for int() with base 10: ''
+Not Found: /favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
+Not Found: /profile/images/icons/favicon.ico
+Not Found: /orders/{fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}
