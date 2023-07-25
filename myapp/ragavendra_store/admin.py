@@ -27,16 +27,17 @@ def generate_invoice_pdf(modeladmin, request, queryset):
 
     # Define header and footer
     header_text = "Invoice"
+    Comapny_Name = "Raghavendra Textiles"
     footer_text = "Your Company Footer"
 
     # Retrieve data from the order table
-    orders = queryset.values('OrderID', 'Name', 'WhatsappNo', 'ContactNo', 'Date', 'Address')
+    orders = queryset.values('OrderID', 'Name', 'WhatsappNo', 'ContactNo', 'Address' ,'Date','Courier','street_name','city','postal_code','state')
 
     # Set logo and header
-    logo_path = "static_files/images/raghavendra-textiles-admin-logo.png"  # Provide the path to your logo file
-    p.drawImage(logo_path, 460, 610, width=80, height=80)  # Adjust the coordinates and dimensions as per your preference
-    p.setFont("Helvetica-Bold", 16)
-    p.drawString(200, 780, header_text)
+    # logo_path = "static_files/images/raghavendra-textiles-admin-logo.png"  # Provide the path to your logo file
+    # p.drawImage(logo_path, 460, 610, width=80, height=80)  # Adjust the coordinates and dimensions as per your preference
+    # p.setFont("Helvetica-Bold", 16)
+    # p.drawString(200, 780, header_text)
 
     # Generate invoice PDF
     for order in orders:
@@ -46,6 +47,12 @@ def generate_invoice_pdf(modeladmin, request, queryset):
         contact_no = order['ContactNo']
         order_date = datetime.now()
         address = order['Address']
+        courier = order['Courier']
+        Street_name = order['street_name']
+        City = order['city']
+        Postal_code  = order['postal_code']
+        State = order['state']
+        formatted_date = datetime.strftime(order_date, "%Y-%m-%d")
 
         # Render invoice details on the PDF canvas
         formatted_date = datetime.strftime(order_date, "%Y-%m-%d")
@@ -53,19 +60,45 @@ def generate_invoice_pdf(modeladmin, request, queryset):
         p.drawString(70, 700, f"S.No:________________")
         p.drawString(460, 700,f"Date: {formatted_date}")
         p.drawString(70, 680, f"Order ID: {order_id}")
-        p.drawString(70, 660, f"Customer: {customer_name}")
+        p.drawString(70, 660, f"Customer Name: {customer_name}")
         p.drawString(70, 640, f"WhatsApp No: {whatsapp_no}")
-        p.drawString(70, 620, f"Contact No: {contact_no}")
-        p.drawString(70, 600, f"Address: {address}")
+        p.drawString(70, 620, f"Address: {address}")
+        p.drawString(70, 600, f"street Name: {Street_name}")
+        p.drawString(70, 580, f"City: {City}")
+        p.drawString(70, 560, f"State: {State}")
+        p.drawString(70, 540, f"Postal code: {Postal_code}")
+        p.drawString(70, 520, f"Courier: {courier}")
+        p.drawString(70, 500, f"Contact No: {contact_no}")
+        p.drawString(70, 475, f"________________________________________________________________________")
+        p.drawString(70, 460, f"Gst No:37AJSPP2513J1ZT ")
+        p.drawString(460, 460, f"Cell:9014200295 ")
+        p.setFont("Helvetica-Bold",30)
+        p.drawString(165, 430, f"{Comapny_Name}")
+        p.setFont("Helvetica-Bold",14.5)
+        p.drawString(80, 410, f"D.no. 12-29-7/A, Near Guntaground Kothapet,Guntur - 522001.(A.P)")
+        p.drawString(200, 395, f"Connect us on  Jaya KItchen")
+        
+       
+
 
         # Additional rendering logic for other invoice details
+        logo_path = "static_files/images/raghavendra-textiles-admin-logo.png"  # Provide the path to your logo file
+        p.drawImage(logo_path, 460, 610, width=80, height=80)  # Adjust the coordinates and dimensions as per your preference
+        p.setFont("Helvetica-Bold", 16)
+        p.drawString(260, 780, header_text)
 
-        p.showPage()  # Move to the next page for the next order
 
-    # Set footer
-    p.setFont("Helvetica", 10)
-    p.setFillColor(colors.grey)
-    p.drawString(50, 50, footer_text)
+        
+
+        p.showPage() 
+         # Move to the next page for the next order
+
+          # Set footer
+        # p.setFont("Helvetica", 10)
+        # p.setFillColor(colors.grey)
+        # p.drawString(50, 50, footer_text)
+
+   
 
     p.save()
     return response
