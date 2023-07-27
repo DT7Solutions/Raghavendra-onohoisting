@@ -13,3 +13,11 @@
     margin-left: 10px;
     margin-right: 6px;
 }
+
+/* .btn.focus, .btn:focus {
+    outline: none !important;
+    box-shadow: none !important;
+} */
+.border {
+    border: none !important;
+}
