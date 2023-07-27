@@ -87,9 +87,12 @@ def orders(request):
         order = Orders.objects.filter(user=request.user, TransactionId=transaction_id).first()
         unique_orders.append(order)
     view_orders_list = Orders.objects.all()
-    oUser_INFO = User_info.objects.filter(userid = request.user.id).first()
+    oUser_INFO = User_info.objects.filter(userid = request.user.id)
+    oUser = User_info.objects.filter(userid = request.user.id).first()
+    profile_data = User_info.objects.filter(userid=request.user.id).values()
+    profile_json = json.dumps(list(profile_data))
     x = oUser_INFO
-    return render(request ,"static_pages/orders.html" ,{"orders_list":unique_orders,"view_orders_list":view_orders_list,'profile':oUser_INFO})
+    return render(request ,"static_pages/orders.html" ,{"orders_list":unique_orders,"view_orders_list":view_orders_list,'profile':oUser_INFO,"profile_json": profile_json,'active_user':oUser})
 
 
 def Updatepassword(request):
@@ -125,11 +128,15 @@ def editprofile(request):
             state = request.POST.get('state',"")
             zip = request.POST.get('zip',"")
             address = request.POST.get('address',"")
-            profile_info = User_info(phonenumber=phonenumber,address=address,city=city,state=state,zip_code=zip,firstname=firstname,lastname=lastname,email=email, userid=userId)
+            address_type = request.POST.get('address_type',"")
+           
+            profile_info = User_info(phonenumber=phonenumber,Address_type=address_type,address=address,city=city,state=state,zip_code=zip,firstname=firstname,lastname=lastname,email=email, userid=userId)
             profile_info.save()
             
     
     return render(request ,"static_pages/profile.html",{'user_data':item})
+
+
 
 def logout(request):
     auth.logout(request)

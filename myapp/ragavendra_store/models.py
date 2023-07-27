@@ -60,11 +60,45 @@ class User_info(models.Model):
     firstname = models.CharField(max_length=100)
     lastname = models.CharField(max_length=100)
     email = models.EmailField()
-    city = models.CharField(max_length=100)
-    state = models.CharField(max_length=100)
-    zip_code = models.CharField(max_length=10)
-    address = models.TextField()
+    city = models.CharField(max_length=100,null=True, blank=True)
+    state = models.CharField(max_length=100,null=True, blank=True)
+    zip_code = models.CharField(max_length=10,null=True, blank=True)
+    address = models.TextField(null=True, blank=True)
+    Address_type = models.CharField(max_length=25,null=True, blank=True)
     userid = models.IntegerField(null=True, default=0)
 
     def __int__(self):
         return self.phonenumber
+    
+
+
+
+# class User_info(models.Model):
+#     phonenumber = models.IntegerField()
+#     firstname = models.CharField(max_length=100)
+#     lastname = models.CharField(max_length=100)
+#     city = models.CharField(max_length=100)
+#     email = models.EmailField()
+#     userid = models.IntegerField(null=True, default=0)
+    
+
+#     def __str__(self):
+#         return self.firstname
+
+# class Address(models.Model):
+#     ADDRESS_TYPES = (
+#         ('home', 'Home'),
+#         ('personal', 'Personal'),
+#         ('work', 'Work'),
+#     )
+
+#     user_info = models.ForeignKey(User_info, on_delete=models.CASCADE, related_name='addresses')
+#     address_type = models.CharField(max_length=10, choices=ADDRESS_TYPES)
+#     city = models.CharField(max_length=100)
+#     state = models.CharField(max_length=100)
+#     zip_code = models.CharField(max_length=10)
+#     address = models.TextField()
+
+#     def __str__(self):
+#         return f"{self.address_type} Address for {self.user_info.firstname} {self.user_info.lastname}"
+

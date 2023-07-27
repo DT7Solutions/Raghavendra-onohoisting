@@ -62,14 +62,28 @@
           Looks good!
         </div>
       </div>
-      <div class="col-md-6 mb-3">
+      <div class="col-md-3 mb-3">
         <label for="validationCustom04">Mail Id</label>
         <input type="text" value="{{ user_data.email }}" class="form-control" id="validationCustom04"  required>
         <div class="valid-feedback">
           Looks good!
         </div>
       </div>
+      <div class="col-md-3 mb-3">
+        
+          <label for="validationCustom09">Address Type</label>
+          <select class="form-control" id="address_type" name="address_type" required>
+              <option value="" disabled selected>Select an address type</option>
+              <option value="home">Home</option>
+              <option value="work">Work</option>
+              <option value="personal">Personal</option>
+          </select>
+          <div class="valid-feedback">
+              Looks good!
+          </div>
       
+      
+      </div>
     </div>
   <div class="form-row">
     <div class="col-md-6 mb-3">
