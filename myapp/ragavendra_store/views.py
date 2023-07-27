@@ -129,11 +129,14 @@ def editprofile(request):
             zip = request.POST.get('zip',"")
             address = request.POST.get('address',"")
             address_type = request.POST.get('address_type',"")
-           
-            profile_info = User_info(phonenumber=phonenumber,Address_type=address_type,address=address,city=city,state=state,zip_code=zip,firstname=firstname,lastname=lastname,email=email, userid=userId)
-            profile_info.save()
-            messages.info(request, 'sucessfully create profile address')
-            return redirect('/orders/') 
+            if User_info.objects.filter(Address_type=address_type, phonenumber=phonenumber).exists():
+                messages.error(request, 'profile address allreddy exists.') 
+                return redirect('/profile/') 
+            else:
+                profile_info = User_info(phonenumber=phonenumber,Address_type=address_type,address=address,city=city,state=state,zip_code=zip,firstname=firstname,lastname=lastname,email=email, userid=userId) 
+                profile_info.save()
+                messages.info(request, 'sucessfully create profile address')
+                return redirect('/orders/') 
             
     
     return render(request ,"static_pages/profile.html",{'user_data':item})
