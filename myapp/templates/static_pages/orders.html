@@ -194,14 +194,6 @@
             </div>
           </div>
       
-       
-      
-      
-      
-      
-      
-      
-      
       
         {% else %}
         <!-- Empty fields for new user -->
@@ -259,20 +251,16 @@
               <option value="India post">INDIA POST</option>
             </select>
           </div>
-      
         </div>
       
         <div class="row">
           <div id="fieldsContainer" class="row"></div>
         </div>
-      
         <button type="submit" class="btn btn-primary">Submit</button>
         </div>
       </div>
       </form>
       
-      
-
     </div>
   </div>
 </div>
@@ -338,10 +326,7 @@
   
    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
    <script>
-     // JavaScript code to handle the dynamic behavior
      $(document).ready(function () {
-       // Get references to the relevant form fields
-     
        const addressTypeSelect = $("#address_type");
        const cityInput = $("#City");
        const stateInput = $("#State");
@@ -349,11 +334,18 @@
        const addressInput = $("#Address");
    
        // Function to update the related fields based on the selected address type
+       debugger
+       const profile = ('{{ profile_json | safe }}');
        function updateAddressFields() {
          const selectedAddressType = addressTypeSelect.val();
-         const selectedAddress = profile.find(item => item.Address_type === selectedAddressType);
+         debugger;
+         
+         y = profile 
+         profileWithoutLineBreaks = profile.replace(/\r?\n|\r/g, '');
+         const profileArray = JSON.parse(profileWithoutLineBreaks);
+         const selectedAddress = profileArray.find(item => item.Address_type === selectedAddressType);
          if (selectedAddress) {
-           cityInput.val('bapatla');
+           cityInput.val(selectedAddress.city);
            stateInput.val(selectedAddress.state);
            zipcodeInput.val(selectedAddress.zip_code);
            addressInput.val(selectedAddress.address);
@@ -364,135 +356,13 @@
            addressInput.val("");
          }
        }
-   
-       // Add event listener to call the updateAddressFields function when the select field changes
-       addressTypeSelect.on("change", updateAddressFields);
-   
-       // Call the updateAddressFields function initially to set the initial values
+       addressTypeSelect.on("change", updateAddressFields); 
        updateAddressFields();
      });
    
-     // Replace the following line with your Django template logic to pass the 'profile' data as a JSON object
-     const profile = JSON.parse('{{ profile | safe | json_script:"oUser_INFO" }}');
-    // const profile = JSON.parse('{{ profile_json | safe }}');
+     
    </script>
 
    
 {% endblock %}
- <!-- <form method="POST" enctype="multipart/form-data" autocomplete="off">
-          {% csrf_token %}
-          <div class="modal-body">
-            <div class="form-group">
-              <input type="text" class="form-control" id="Name" name="Name" requiured placeholder="Name" >
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" id="WhatsappNo" name="WhatsappNo" required   placeholder="WhatsappNo" >
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" value='' id="ContactNo" name="ContactNo" requiured placeholder="ContactNo" >
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" value=''   id="Address" name="Address"   placeholder="Address">
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" value='' id="streetname" name="streetname"  placeholder="Street Name" >
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" value='' id="City" name="City"  placeholder="City" >
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" value=''   id="State" name="State" placeholder="State Name" >
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control" value='' id="Postalcode" name="Postalcode"  placeholder="Postalcode" >
-            </div>
-            <div class="form-group">
-              
-              <select class="custom-select"  name="Courier"  id="Courier">
-                <option selected>Choose. type Courier</option>
-                <option value="Dtdtc">ddtc</option>
-                <option value="India post">India Post</option>
-                
-              </select>
-            </div>
-            <div class="form-group">
-              <input type="text" class="form-control"   id="TransactionNo" name="TransactionNo" placeholder="PhonePay/GooglePay UTRNo">
-            </div>
-        
-            <div class="form-group">
-              <input type="text" class="form-control"  id="No_of_items" name="No_of_items"   placeholder="No of items" onkeyup="updateFileInputs()">
-            </div>
-            <div class="form-group">
-              <input name="image_file" type="file" id="image_file"  class="form-control"   accept=".jpg,.jpeg,.pdf,.png"   placeholder="upload image" >
-            </div>
-        
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </form>
-      -->
-
-
-
-      <!-- <nav class="navbar navbar-light bg-dark">
-    <div class="container-fluid d-flex px-5">
-        <div>
-            <div class="navbar-brand  animate__animated animate__fadeInLeft" href="#">
-                <h3 class="text-light">Raghavendra Textiles</h3>
-            </div>
-        </div>
-      <div class="profile-details animate__animated animate__fadeInRight animate__delay-1s d-flex justify-content-center align-items-center">
-        <div class="dropdown mx-2" >
-          <button class="btn btn-transparent   "  type="button" id="dropdownMenuButton" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
-            <img src="{% static 'images/profile-icon.png' %}" class="profile-img" alt="IMG">
-          </button>
-          <div class="dropdown-menu shadow px-5  bg-white rounded animate__animated animate__zoomIn " aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="/profile/">Edit Profile</a>
-         
-            <a class="dropdown-item" href="/logout/">logout</a>
-           
-          </div>
-        </div>
-      
-        <h5 class="text-light" >{{ request.user }}</h5>
-       
-        
-       
-      </div>
-    </div>
-  </nav> -->
-
-   <!-- <div class="container">
-    <table class="table table-hover px-5">
-        <thead>
-            <tr>
-              <th scope="col">OrderID</th>
-              <th scope="col">Name</th>
-              <th scope="col">WhatsappNo</th>
-              <th scope="col">Address</th>
-              <th scope="col">Courier</th>
-              <th scope="col">No_Of_Items</th>
-              <th scope="col">OrderStatus</th>
-              <th scope="col">TrackingId</th>
-              <th scope="col">image</th>
-              <th scope="col">Date</th>
-            </tr>
-          </thead>
-          <tbody>
-            {% for item in orders_list %}
-            <tr>
-              <th scope="row">{{item.OrderID}}</th>
-              <td>{{item.Name}}</td>
-              <td>{{item.WhatsappNo}}</td>
-              <td>{{item.Address}}</td>
-              <td>{{item.Courier}}</td>
-              <td>{{item.No_Of_Items}}</td>
-              <td>{{item.OrderStatus}}</td>
-              <td>{{item.TrackingId}}</td>
-              <td><img src="/media/{{item.file}}" alt="" height="100" width="100"></td>
-              <td>{{item.Date}}</td>
-            </tr>
-            {% endfor %}
-            
-          </tbody>
-      </table>
- </div> -->
+ 
