@@ -184,11 +184,7 @@
                   <option value="Home">Home</option>
                 {% else%} -->
                   {% for item in profile %}
-                    {% if item|length == 0 %}
-                      <option value="Home">Home</option>
-                    {% else%}
                       <option value="{{ item.Address_type }}">{{ item.Address_type }}</option>
-                    {% endif %}
                   {% endfor %}
                 <!-- {% endif %} -->
                 
