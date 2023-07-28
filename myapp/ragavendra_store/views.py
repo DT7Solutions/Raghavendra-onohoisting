@@ -91,7 +91,6 @@ def orders(request):
     oUser = User_info.objects.filter(userid = request.user.id).first()
     profile_data = User_info.objects.filter(userid=request.user.id).values()
     profile_json = json.dumps(list(profile_data))
-    x = oUser_INFO
     return render(request ,"static_pages/orders.html" ,{"orders_list":unique_orders,"view_orders_list":view_orders_list,'profile':oUser_INFO,"profile_json": profile_json,'active_user':oUser})
 
 

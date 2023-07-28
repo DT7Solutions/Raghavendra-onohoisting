@@ -35,14 +35,16 @@
     
     <diV>
 
-    <label for="courier" class="mx-2">Select type of courier:</label>
-    <select name="courier" id="courier" class="mx-2">
-      <option value="" selected> -- select courier -- </option>
-      <option  value="https://www.dtdc.in/tracking.asp">DTDC</option>
-      <option    value="https://www.indiapost.gov.in/_layouts/15/dop.portal.tracking/trackconsignment.aspx">INDIA POST</option>
-      
-    </select>
-    <button class="btn btn-primary btn-sm" onclick="SelectedOption()">Track your order</button>
+    <!-- <label for="courier" class="mx-2">Select type of courier:</label> -->
+    <div class="d-flex">
+      <select name="courier" id="courier" class="mx-2 ">
+        <option value="" selected> -- select courier -- </option>
+        <option  value="https://www.dtdc.in/tracking.asp">DTDC</option>
+        <option    value="https://www.indiapost.gov.in/_layouts/15/dop.portal.tracking/trackconsignment.aspx">INDIA POST</option>
+      </select>
+      <button class="btn btn-primary btn-sm trorder" onclick="SelectedOption()">Track your order</button>
+    </div>
+  
    
   </diV>
     <div class="d-flex justify-content-end mt-5 mb-5 px-5">
@@ -138,11 +140,18 @@
 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title  text-center" id="staticBackdropLabel">Book Your orders</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+      <div class="modal-header d-flex justify-content-between">
+        <div>
+          <h5 class="modal-title  text-center" id="staticBackdropLabel">Book Your orders</h5>
+        </div>
+        <div>
+          <marquee width="100%" direction="LEFT">Make sure your profile is up to date with your new address!</marquee>
+        </div>
+        <div>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
       </div>
       <form method="POST" enctype="multipart/form-data" autocomplete="off">
         {% csrf_token %}
@@ -171,9 +180,18 @@
             <div class="form-group col-sm-12 col-lg-4">
               <select class="form-control" id="address_type" name="address_type" required>
                 <option value="" disabled selected>Select an address type</option>
-                {% for item in profile %}
-                <option value="{{ item.Address_type }}">{{ item.Address_type }}</option>
-                {% endfor %}
+                <!-- {% if profile|length == 0 %}
+                  <option value="Home">Home</option>
+                {% else%} -->
+                  {% for item in profile %}
+                    {% if item|length == 0 %}
+                      <option value="Home">Home</option>
+                    {% else%}
+                      <option value="{{ item.Address_type }}">{{ item.Address_type }}</option>
+                    {% endif %}
+                  {% endfor %}
+                <!-- {% endif %} -->
+                
               </select>
             </div>
             <div class="form-group col-sm-12 col-lg-4">
@@ -257,7 +275,7 @@
         <div class="row">
           <div id="fieldsContainer" class="row"></div>
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Order</button>
         </div>
       </div>
       </form>
