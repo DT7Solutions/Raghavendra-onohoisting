@@ -147,6 +147,16 @@ def logout(request):
     return HttpResponseRedirect("/")
 
 
+from django.shortcuts import render
+
+def page_not_found_view(request, exception):
+    return render(request, 'static_pages/404.html', status=404)
+    
+   
+        
+
+
+
 # def register(request):
 #     if request.method == 'POST':
 #         user_form = createAccount(request.POST)
