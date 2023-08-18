@@ -56,10 +56,12 @@ class Orders(models.Model):
             return self.OrderID
     
 class User_info(models.Model):
+   
     phonenumber = models.IntegerField()
     firstname = models.CharField(max_length=100)
     lastname = models.CharField(max_length=100)
     email = models.EmailField()
+    Reciepentname = models.CharField(max_length=100,null=True, blank=True)
     city = models.CharField(max_length=100,null=True, blank=True)
     state = models.CharField(max_length=100,null=True, blank=True)
     zip_code = models.CharField(max_length=10,null=True, blank=True)
@@ -68,7 +70,7 @@ class User_info(models.Model):
     userid = models.IntegerField(null=True, default=0)
 
     def __int__(self):
-        return self.phonenumber
+        return self.Reciepentname
     
 
 

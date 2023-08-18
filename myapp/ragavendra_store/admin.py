@@ -16,7 +16,7 @@ class AdminRegister(admin.ModelAdmin):
     list_display=('UserID','FirstName','LastName','EmailID','Phone','Password')
 
 class AdminProfile(admin.ModelAdmin):
-    list_display=('phonenumber','firstname','lastname','Address_type','email','city')
+    list_display=('phonenumber','firstname','lastname','Address_type','email','Reciepentname','city')
 
 
 def generate_invoice_pdf(modeladmin, request, queryset):

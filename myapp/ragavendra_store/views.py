@@ -13,6 +13,15 @@ from django.contrib.auth.models import User, auth
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.hashers import make_password
 from .models import User_info
+from django.contrib.auth.tokens import default_token_generator
+from django.utils.http import urlsafe_base64_encode, urlsafe_base64_decode
+from django.template.loader import render_to_string
+from django.core.mail import send_mail
+from django.utils.encoding import force_bytes, force_str
+from django.urls import reverse
+from django.core.mail import EmailMessage
+
+
 # Create your views here.
 def home(request):
     if request.method=='POST':
@@ -94,24 +103,57 @@ def orders(request):
     return render(request ,"static_pages/orders.html" ,{"orders_list":unique_orders,"view_orders_list":view_orders_list,'profile':oUser_INFO,"profile_json": profile_json,'active_user':oUser})
 
 
+# def Updatepassword(request):
+#     if request.method=='POST':
+#         username = request.POST.get('Username',"")
+#         password = request.POST.get('password',"")
+#         re_password = request.POST.get('re-password',"")
+#         user_item = User.objects.filter(username = username)
+#         for user in user_item:
+#             if user is None:
+#                 messages.error(request, 'user not found')
+#             elif password != re_password:
+#                 messages.error(request, 'password does not match')
+#             else:
+#                 hashed_password = make_password(password, hasher='pbkdf2_sha256')
+#                 user.password=hashed_password
+#                 user.save()
+#                 return redirect('/') 
+        
+#     return render(request ,"static_pages/forgotpassword.html")
+
 def Updatepassword(request):
     if request.method=='POST':
         username = request.POST.get('Username',"")
-        password = request.POST.get('password',"")
-        re_password = request.POST.get('re-password',"")
-        user_item = User.objects.filter(username = username)
-        for user in user_item:
-            if user is None:
-                messages.error(request, 'user not found')
-            elif password != re_password:
-                messages.error(request, 'password does not match')
-            else:
-                hashed_password = make_password(password, hasher='pbkdf2_sha256')
-                user.password=hashed_password
-                user.save()
-                return redirect('/') 
+        try:
+            user = User.objects.get(username=username)
+        except User.DoesNotExist:
+            messages.error(request, 'User not found.')
+        else:
+            token = default_token_generator.make_token(user)
+            uid = urlsafe_base64_encode(force_bytes(user.pk))
+            url = 'http://127.0.0.1:8000'
+            reset_link = url + reverse('password_reset_confirm', kwargs={'uidb64': uid, 'token': token})
+            
+            email_subject = 'Password Reset Request'
+            email_message = render_to_string('static_pages/reset_password_email.html', {
+                'user': user,
+                'reset_link': reset_link,
+              
+            })
+            
+            send_mail(email_subject, email_message, 'manideep723@gmail.com', [user.email])
+            send_mail.content_subtype = 'html'
+           
+            messages.success(request, 'Password reset link sent to your email.')
+         
+        
+        
+       
         
     return render(request ,"static_pages/forgotpassword.html")
+
+
 
 @login_required
 def editprofile(request):
@@ -127,18 +169,75 @@ def editprofile(request):
             state = request.POST.get('state',"")
             zip = request.POST.get('zip',"")
             address = request.POST.get('address',"")
+            reciepent_name = request.POST.get('reciepent_name',"")
             address_type = request.POST.get('address_type',"")
-            if User_info.objects.filter(Address_type=address_type, phonenumber=phonenumber).exists():
+            if User_info.objects.filter(Reciepentname=reciepent_name, phonenumber=phonenumber).exists():
                 messages.error(request, 'profile address allreddy exists.') 
                 return redirect('/profile/') 
             else:
-                profile_info = User_info(phonenumber=phonenumber,Address_type=address_type,address=address,city=city,state=state,zip_code=zip,firstname=firstname,lastname=lastname,email=email, userid=userId) 
+                profile_info = User_info(phonenumber=phonenumber,Address_type=address_type,address=address,city=city,state=state,zip_code=zip,firstname=firstname,lastname=lastname,email=email,Reciepentname=reciepent_name, userid=userId) 
                 profile_info.save()
                 messages.info(request, 'sucessfully create profile address')
                 return redirect('/orders/') 
+        oUser_data =User_info.objects.filter(userid=request.user.id)
             
     
-    return render(request ,"static_pages/profile.html",{'user_data':item})
+    return render(request ,"static_pages/profile.html",{'user_data':item,'oUser_data':oUser_data})
+
+
+# @login_required
+# def editprofile(request):
+#     user_item = User.objects.filter(username=request.user).first()
+
+#     if request.method == 'POST':
+#         userId = user_item.id
+#         phonenumber = user_item.username
+#         firstname = user_item.first_name
+#         lastname = user_item.last_name
+#         email = user_item.email
+#         city = request.POST.get('city', "")
+#         state = request.POST.get('state', "")
+#         zip_code = request.POST.get('zip', "")
+#         address = request.POST.get('address', "")
+#         address_type = request.POST.get('address_type', "")
+
+#         if User_info.objects.filter(Address_type=address_type, phonenumber=phonenumber).exists():
+#             messages.error(request, 'Profile address already exists.')
+#             return redirect('/profile/')
+#         else:
+#             profile_info = User_info(
+#                 user=user_item,
+#                 phonenumber=phonenumber,
+#                 Address_type=address_type,
+#                 address=address,
+#                 city=city,
+#                 state=state,
+#                 zip_code=zip_code,
+#                 firstname=firstname,
+#                 lastname=lastname,
+#                 email=email,
+#                 userid=userId
+#             )
+#             profile_info.save()
+#             messages.info(request, 'Successfully created profile address')
+#             return redirect('/orders/')
+
+#     user_info = User_info.objects.filter(user=user_item)
+    
+#     context = {
+#         'user_data': user_item,
+#         'user_info': user_info,
+#     }
+    
+#     return render(request, "static_pages/profile.html", context)
+
+
+   
+
+    
+
+    
+
 
 
 
