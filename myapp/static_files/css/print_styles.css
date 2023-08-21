@@ -1,0 +1,19 @@
+/* print_styles.css */
+/* 
+@media print {
+    @page {
+        size: A5!important;
+        margin: 0!important;
+    }
+    .print-content {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+        padding: 20px;
+        box-sizing: border-box;
+        font-size: 1em; 
+    }
+
+
+  
+} */

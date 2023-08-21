@@ -5,8 +5,11 @@ import csv
 from django.http import HttpResponse
 from reportlab.pdfgen import canvas
 from datetime import datetime
-from reportlab.lib.pagesizes import letter,A4
+from reportlab.lib.pagesizes import letter,A4,A5
 from reportlab.lib import colors
+from django.urls import reverse
+from django.utils.html import format_html
+from .models import Orders
 
 
 # Register your models here.
@@ -23,7 +26,7 @@ def generate_invoice_pdf(modeladmin, request, queryset):
     response = HttpResponse(content_type='application/pdf')
     response['Content-Disposition'] = 'attachment; filename="invoice.pdf"'
 
-    p = canvas.Canvas(response, pagesize=A4)
+    p = canvas.Canvas(response, pagesize=A5)
 
     # Define header and footer
     header_text = "Invoice"
@@ -140,7 +143,7 @@ def generate_invoice_pdf(modeladmin, request, queryset):
 
 generate_invoice_pdf.short_description = "Generate Invoice PDF"
 class AdminOrder(admin.ModelAdmin):
-    list_display=('OrderID','Name','WhatsappNo','ContactNo','Date','Address','OrderStatus','file','TransactionId')
+    list_display=('OrderID','Name','WhatsappNo','ContactNo','Date','Address','OrderStatus','file','TransactionId' ,'print_link')
     list_filter= ['Name','WhatsappNo','Date','TransactionId','OrderStatus']
     search_fields = ['WhatsappNo','OrderStatus','Date']
     date_hierarchy = 'Date'
@@ -156,6 +159,15 @@ class AdminOrder(admin.ModelAdmin):
              writer.writerow([getattr(obj, field) for field in fieldnames])
         return response
     export_to_csv.short_description = "Download selected as csv"
+
+    
+    def print_link(self, obj):
+        print_url = reverse('print_order', args=[obj.pk])  # 'admin_print_order' is the name of the print view URL pattern
+        return format_html('<a href="{}" class="print-link" target="_blank">Print</a>', print_url)
+    print_link.short_description = 'Print'
+    class Media:
+        js = ('js/print_link_script.js',)
+        # css = ('css/print_styles.css')
 
 
 

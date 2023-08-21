@@ -20,6 +20,8 @@ from django.core.mail import send_mail
 from django.utils.encoding import force_bytes, force_str
 from django.urls import reverse
 from django.core.mail import EmailMessage
+from django.shortcuts import render, get_object_or_404
+from .models import Orders
 
 
 # Create your views here.
@@ -252,7 +254,11 @@ def page_not_found_view(request, exception):
     return render(request, 'static_pages/404.html', status=404)
     
    
-        
+def print_order(request, order_id):
+    order = get_object_or_404(Orders, pk=order_id)
+    # order = Orders.objects.get(id=order_id)
+    print(order)
+    return render(request, 'static_pages/print_order_template.html', {'order': order})        
 
 
 

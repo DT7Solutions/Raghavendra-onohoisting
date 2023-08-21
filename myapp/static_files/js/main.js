@@ -55,3 +55,26 @@
     
 
 })(jQuery);
+
+
+(function () {
+    // Your existing code for print_link_script.js follows here
+
+    // Add event listener to the "Print" link
+    var printLinks = document.querySelectorAll('.print-link');
+    printLinks.forEach(function (printLink) {
+        printLink.addEventListener('click', function (e) {
+            e.preventDefault();
+
+            // Create a new window for printing
+            var printWindow = window.open('', '_blank');
+            printWindow.document.write('<html><head><title>Print</title>');
+            printWindow.document.write('<link rel="stylesheet" type="text/css" href="{% static \'css/print_styles.css\' %}">'); // Link the print styles
+            printWindow.document.write('</head><body>');
+            printWindow.document.write(document.querySelector('div.print-content').innerHTML);  // Replace 'div.print-content' with the appropriate selector for your content
+            printWindow.document.write('</body></html>');
+            printWindow.document.close();
+            printWindow.print();
+        });
+    });
+})();
