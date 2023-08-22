@@ -104,21 +104,32 @@
     
     </div>
     
+    
    
     <!-- Add more order details as needed -->
 
-    <script>
+    <!-- <script>
         document.addEventListener("DOMContentLoaded", function() {
             var printLinks = document.getElementsByClassName("print-link");
             for (var i = 0; i < printLinks.length; i++) {
                 printLinks[i].addEventListener("click", function(event) {
                     event.preventDefault();
+                 
                     var printWindow = window.open(this.href, "_blank");
                     printWindow.addEventListener("load", function() {
                         printWindow.print();
+                       
                     });
                 });
             }
+        });
+    </script> -->
+   
+    
+     <script>
+        // JavaScript code for printing
+        document.getElementById('print-button').addEventListener('click', function() {
+            window.print();
         });
     </script>
     

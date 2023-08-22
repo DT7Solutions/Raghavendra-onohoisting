@@ -150,4 +150,26 @@
             $actionsEls.actions();
         }
     });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var printLinks = document.getElementsByClassName("print-link");
+        for (var i = 0; i < printLinks.length; i++) {
+            printLinks[i].addEventListener("click", function(event) {
+                event.preventDefault();
+                
+             
+                var printWindow = window.open(this.href, "_blank");
+                printWindow.print();
+              
+                    
+               
+                // printWindow.addEventListener("load", function() {
+                //     printWindow.print();
+                   
+                // });
+            });
+        }
+    });
+    
+
 })(django.jQuery);

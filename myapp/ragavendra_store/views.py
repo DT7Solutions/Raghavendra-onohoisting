@@ -174,7 +174,7 @@ def editprofile(request):
             reciepent_name = request.POST.get('reciepent_name',"")
             address_type = request.POST.get('address_type',"")
             if User_info.objects.filter(Reciepentname=reciepent_name, phonenumber=phonenumber).exists():
-                messages.error(request, 'profile address allreddy exists.') 
+                messages.error(request, 'profile address already exists.') 
                 return redirect('/profile/') 
             else:
                 profile_info = User_info(phonenumber=phonenumber,Address_type=address_type,address=address,city=city,state=state,zip_code=zip,firstname=firstname,lastname=lastname,email=email,Reciepentname=reciepent_name, userid=userId) 
