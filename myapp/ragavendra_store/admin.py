@@ -19,7 +19,8 @@ class AdminRegister(admin.ModelAdmin):
     list_display=('UserID','FirstName','LastName','EmailID','Phone','Password')
 
 class AdminProfile(admin.ModelAdmin):
-    list_display=('phonenumber','firstname','lastname','Address_type','email','Reciepentname','city')
+    pass
+    list_display=('phonenumber','firstname','lastname','Address_type','email','Reciepentname','Mandal','District','Postal_code')
 
 
 def generate_invoice_pdf(modeladmin, request, queryset):
@@ -34,7 +35,7 @@ def generate_invoice_pdf(modeladmin, request, queryset):
     footer_text = "Your Company Footer"
 
     # Retrieve data from the order table
-    orders = queryset.values('OrderID', 'Name', 'WhatsappNo', 'ContactNo', 'Address' ,'Date','Courier','street_name','city','postal_code','state')
+    orders = queryset.values('OrderID', 'Name', 'WhatsappNo', 'ContactNo', 'Dono' ,'Date','Courier','LandMark','Area_name','Village','Mandal','District','State','postal_code')
 
     # Set logo and header
     # logo_path = "static_files/images/raghavendra-textiles-admin-logo.png"  # Provide the path to your logo file
@@ -49,11 +50,14 @@ def generate_invoice_pdf(modeladmin, request, queryset):
         whatsapp_no = order['WhatsappNo']
         contact_no = order['ContactNo']
         order_date = datetime.now()
-        address = order['Address']
-        courier = order['Courier']
-        Street_name = order['street_name']
-        City = order['city']
-        Postal_code  = order['postal_code']
+        doorno = order['Dono']
+        landmark = order['LandMark']
+        areaname = order['Area_name']
+        village = order['Village']
+        mandal= order['Mandal']
+        district= order['District']
+        state = order['State']
+        Postal_code  = order['Postal_code']
         State = order['state']
         formatted_date = datetime.strftime(order_date, "%Y-%m-%d")
 
@@ -143,7 +147,7 @@ def generate_invoice_pdf(modeladmin, request, queryset):
 
 generate_invoice_pdf.short_description = "Generate Invoice PDF"
 class AdminOrder(admin.ModelAdmin):
-    list_display=('OrderID','Name','WhatsappNo','ContactNo','Date','Address','OrderStatus','file','TransactionId' ,'print_link')
+    list_display=('OrderID','Name','WhatsappNo','ContactNo','Date','OrderStatus','file','TransactionId' ,'print_link')
     list_filter= ['Name','WhatsappNo','Date','TransactionId','OrderStatus']
     search_fields = ['WhatsappNo','OrderStatus','Date']
     date_hierarchy = 'Date'

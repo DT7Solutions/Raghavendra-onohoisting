@@ -39,7 +39,7 @@
 </nav>
  
 
-<div class="container mt-5 pt-5 ">
+<div class="container mt-5 pt-5  pb-5">
   <h1 class="text-center mb-5">Profile Details</h1>
 
   <form class="needs-validation mb-5" id="profile_data" method="POST" novalidate>
@@ -60,7 +60,7 @@
         </div>
       </div>
       <div class="col-md-6 mb-3">
-        <label for="validationCustom02">Last name</label>
+        <label for="validationCustom02">Last Name</label>
         <input type="text" value="{{ user_data.last_name }}" class="form-control" id="validationCustom02" required
           disabled>
         <div class="valid-feedback">
@@ -69,8 +69,8 @@
       </div>
     </div>
     <div class="form-row">
-      <div class="col-md-6 mb-3">
-        <label for="validationCustom03">Phone no</label>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom03">Phone No</label>
         <input type="number" value="{{ user_data.username }}" class="form-control" id="phone" name="phone" required>
         <div class="valid-feedback">
           Looks good!
@@ -95,11 +95,7 @@
         <div class="valid-feedback">
           Looks good!
         </div>
-
-
       </div>
-    </div>
-    <div class="form-row">
       <div class="col-md-3 mb-3">
         <label for="validationCustom10">Reciepent Name </label>
         <input type="text" class="form-control" id="reciepent_name" name="reciepent_name" required>
@@ -107,40 +103,95 @@
           Please provide a valid Reciepent Name
         </div>
       </div>
+    </div>
+    <div class="form-row">
+     
       <div class="col-md-3 mb-3">
-        <label for="validationCustom05">City</label>
-        <input type="text" class="form-control" id="city" name="city" required>
+        <label for="validationCustom05">Door No</label>
+        <input type="text" class="form-control" id="door-no" name="door-no" required>
         <div class="invalid-feedback">
-          Please provide a valid city.
+          please enter door no
         </div>
       </div>
-
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom05">LandMark</label>
+        <input type="text" class="form-control" id="landmark" name="landmark" required>
+        <div class="invalid-feedback">
+          Please enter landmark
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom05">Area Name</label>
+        <input type="text" class="form-control" id="Area_name" name="Area_name" required>
+        <div class="invalid-feedback">
+          Please enter area name
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom05">Village</label>
+        <input type="text" class="form-control" id="village" name="village" required>
+        <div class="invalid-feedback">
+          Please enter village name
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom05">Mandal</label>
+        <input type="text" class="form-control" id="mandal" name="mandal" required>
+        <div class="invalid-feedback">
+          Please enter mandal
+        </div>
+      </div>
+      <div class="col-md-3 mb-3">
+        <label for="validationCustom05">District/City/Town</label>
+        <input type="text" class="form-control" id="district" name="district" required>
+        <div class="invalid-feedback">
+          Please enter district
+        </div>
+      </div>
       <div class="col-md-3 mb-3">
         <label for="validationCustom06">State</label>
         <select class="custom-select" id="state" name="state" required>
           <option selected disabled value="">Choose...</option>
-          <option>Andhra Pradesh</option>
-          <option>Hyderabad</option>
-          <option>karnataka</option>
-          <option>Tamilnadu</option>
-          <option>Other</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+              <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+              <option value="Assam">Assam</option>
+              <option value="Bihar">Bihar</option>
+              <option value="Chhattisgarh">Chhattisgarh</option>
+              <option value="Goa">Goa</option>
+              <option value="Gujarat">Gujarat</option>
+              <option value="Haryana">Haryana</option>
+              <option value="Himachal Pradesh">Himachal Pradesh</option>
+              <option value="Jharkhand">Jharkhand</option>
+              <option value="Karnataka">Karnataka</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Madhya Pradesh">Madhya Pradesh</option>
+              <option value="Maharashtra">Maharashtra</option>
+              <option value="Manipur">Manipur</option>
+              <option value="Meghalaya">Meghalaya</option>
+              <option value="Mizoram">Mizoram</option>
+              <option value="Nagaland">Nagaland</option>
+              <option value="Odisha">Odisha</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Rajasthan">Rajasthan</option>
+              <option value="Sikkim">Sikkim</option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Tripura">Tripura</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Uttarakhand">Uttarakhand</option>
+              <option value="West Bengal">West Bengal</option>
         </select>
         <div class="invalid-feedback">
-          Please select a valid state.
+          Please select your state.
         </div>
       </div>
       <div class="col-md-3 mb-3">
-        <label for="validationCustom07">Zip</label>
-        <input type="text" class="form-control" id="zip" name="zip" required>
+        <label for="validationCustom07">Zip Code</label>
+        <input type="text" class="form-control" id="postal-code" name="postal-code" required>
         <div class="invalid-feedback">
-          Please provide a valid zip.
+          Please enter postal code.
         </div>
       </div>
-    </div>
-    <div class="form-row mb-2">
-      <label for="validationCustom08">Address</label>
-      <textarea class="form-control" id="address" name="address" rows="3"></textarea>
-
     </div>
     <div class="form-group">
       <div class="form-check">
