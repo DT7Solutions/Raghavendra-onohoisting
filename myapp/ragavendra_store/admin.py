@@ -147,7 +147,7 @@ def generate_invoice_pdf(modeladmin, request, queryset):
 
 generate_invoice_pdf.short_description = "Generate Invoice PDF"
 class AdminOrder(admin.ModelAdmin):
-    list_display=('OrderID','Name','WhatsappNo','ContactNo','Date','OrderStatus','file','TransactionId' ,'print_link')
+    list_display=('OrderID','Name','WhatsappNo','ContactNo','Date','OrderStatus','item_size','file','TransactionId' ,'print_link')
     list_filter= ['Name','WhatsappNo','Date','TransactionId','OrderStatus']
     search_fields = ['WhatsappNo','OrderStatus','Date']
     date_hierarchy = 'Date'

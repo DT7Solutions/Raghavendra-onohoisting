@@ -477,3 +477,14 @@ iframe {
       margin: 0;
   }
 }
+label{
+  color:#424040cc!important;
+ 
+}
+
+.alignments{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+}
