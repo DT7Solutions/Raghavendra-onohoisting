@@ -60,7 +60,8 @@ def createAccount(request):
                
 @login_required
 def orders(request):
-    tracking_id = ''
+    tracking_id = '',
+    order_placed = False 
     if request.method=='POST':
         name = request.POST.get('Name',"")
         whatsapp_No = request.POST.get('WhatsappNo',"")
@@ -77,6 +78,7 @@ def orders(request):
         Transactionid  = request.POST.get('TransactionNo',"")
         No_of_items = request.POST.get('No_of_items',"")
         tracking_id = Transactionid
+        order_placed = True
         # up_file = request.FILES['image_file']
         # upload_file = settings.MEDIA_URL[1:] + "//img//" + str(up_file.name)
         for item in range(int(No_of_items)):
@@ -92,6 +94,8 @@ def orders(request):
             oOrder_info = Orders(Name=name,WhatsappNo=whatsapp_No,ContactNo=contact_no,Dono=door_no,LandMark=landmark,Area_name=areaname,Village=village,Mandal=mandal,District=district,State=state,Postal_code=postalcode,Courier=courier,TransactionId=Transactionid,No_Of_Items=No_of_items,item_color=Color, item_size=Size, file=up_file,user=request.user)
             oOrder_info.save()
             message = f'welcome {request.user} thank for order raghavendra textiles '
+            order_pop =  name
+            messages.success(request,f'Thank you  {order_pop} for choosing Raghavendra Textiles! Your order  has been successfully placed. Happy shopping! with us')
         # send_whatsapp_message(message=message,whatsapp_no=whatsapp_No)
         return HttpResponseRedirect('/orders/')
     unique_orders = []
@@ -104,7 +108,8 @@ def orders(request):
     oUser = User_info.objects.filter(userid = request.user.id).first()
     profile_data = User_info.objects.filter(userid=request.user.id).values()
     profile_json = json.dumps(list(profile_data))
-    return render(request ,"static_pages/orders.html" ,{"orders_list":unique_orders,"view_orders_list":view_orders_list,'profile':oUser_INFO,"profile_json": profile_json,'active_user':oUser})
+   
+    return render(request ,"static_pages/orders.html" ,{"orders_list":unique_orders,"view_orders_list":view_orders_list,'profile':oUser_INFO,"profile_json": profile_json,'active_user':oUser,'order_placed': order_placed})
 
 
 # def Updatepassword(request):
@@ -146,7 +151,7 @@ def Updatepassword(request):
               
             })
             
-            send_mail(email_subject, email_message, 'manideep723@gmail.com', [user.email])
+            send_mail(email_subject, email_message, 'noreplyraghavendratextiles@gmail.com', [user.email])
             send_mail.content_subtype = 'html'
            
             messages.success(request, 'Password reset link sent to your email.')

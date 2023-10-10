@@ -20,14 +20,83 @@
                 </div>
             </div>
             <h5 class="text-light">{{ request.user.first_name }}</h5>
+            
         </div>
     </div>
 </nav>
 
 
 
+<!-- {% for msg in messages %}
 
+<div id="orderPlacedAlert" class="alert alert-success">
+  
+  <script>
+ 
+    alert('Order placed successfully!')
+  
+    </script>
+  {{msg}} 
+</div>
 
+{% endfor %} -->
+
+<!-- Add this modal to your template -->
+<!-- <div class="modal fade" id="orderPlacedModal" tabindex="-1" role="dialog" aria-labelledby="orderPlacedModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+      <div class="modal-content">
+          <div class="modal-header">
+              
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+              </button>
+          </div>
+          <div class="modal-body" style="display:flex;justify-content: center;align-items: center;">
+            <svg viewBox="0 0 32 32" class="modal-image" style="fill:#48DB71"><path d="M1 14 L5 10 L13 18 L27 4 L31 8 L13 26 z"></path></svg>
+            <h5 class="modal-title" id="orderPlacedModalLabel">Order Placed Successfully!</h5>
+             
+              {{ msg }}
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+      </div>
+  </div>
+</div> -->
+{% for item in orders_list %}
+<div id="orderPlacedModal" tabindex="-1" role="dialog" aria-labelledby="orderPlacedModalLabel" aria-hidden="true" class="modal fade">
+	<div class="modal-dialog modal-confirm">
+		<div class="modal-content">
+			<div class="modal-header">
+				<div class="icon-box">
+					<svg xmlns="http://www.w3.org/2000/svg" width="60" height="80" fill="currentColor" class="bi bi-check" viewBox="0 0 16 16">
+            <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"/>
+          </svg>
+         
+				</div>				
+				<h4 class="modal-title w-100">Thank You</h4>	
+			</div>
+			<div class="modal-body">
+				<p class="text-center">{{ item.Name }} for choosing Raghavendra Textiles! Your order has been successfully placed. Happy shopping with us !</p>
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-success btn-block" data-dismiss="modal">OK</button>
+			</div>
+		</div>
+	</div>
+</div>    
+{% endfor %}
+
+{% for msg in messages %}
+<div id="orderPlacedAlert" class="alert alert-success">
+    <script>
+       
+        $('#orderPlacedModal').modal('show');
+    </script>
+    {{ msg }}
+</div>
+{% endfor %}
 
 
 
@@ -49,7 +118,7 @@
    
   </diV>
     <div class="d-flex justify-content-end mt-5 mb-5 ">
-        <button class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">New Order</button>
+        <button class="btn btn-primary" data-toggle="modal" data-target="#staticBackdrop">New Order  </button>
     </div>
     
   </div>
@@ -137,13 +206,14 @@
 
 
 
+
 <!-- Modal -->
 <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-xl">
     <div class="modal-content">
       <div class="modal-header d-flex justify-content-between">
         <div class="col-lg-3">
-          <h5 class="modal-title  text-center" id="staticBackdropLabel">Book Your orders</h5>
+          <h5 class="modal-title  text-center" id="staticBackdropLabel">Book Your orders </h5>
         </div>
         <div class="col-lg-7">
           <marquee width="100%" direction="LEFT">Visit your profile page  to select an address type and details before ordering. Save up to three addresses | ఆర్డర్ చేయడం ముందు, మీ ప్రొఫైల్ పేజీకి వెళ్ళండి. అలాగే, ఆర్డర్ చేయడం ముందు మీకు కావల్సిన చిరునామా వివరాలు ఎంచుకోండి. ముందుగా మూడు చిరునామాలను సేవ్ చేసుకోవచ్చు.</marquee>
@@ -154,7 +224,10 @@
           </button>
         </div>
       </div>
-      <form method="POST" enctype="multipart/form-data" autocomplete="off">
+      
+
+
+      <form method="POST" enctype="multipart/form-data" autocomplete="off"  needs-validation >
         {% csrf_token %}
       
         <div class="modal-body">
@@ -275,23 +348,27 @@
               placeholder="PhonePay/GooglePay UTRNo" required>
           </div>
           <div class="form-group col-sm-12 col-lg-4">
-            <input type="number" class="form-control" id="No_of_items" name="No_of_items" onkeyup="createFields()" min="1"
+            <input type="number" class="form-control" id="No_of_items" name="No_of_items" required  onkeyup="createFields()" min="1"
               max="10" placeholder="No of items" onkeyup="updateFileInputs()">
           </div>
       
           <div class="form-group col-sm-12 col-lg-4">
-            <select class="custom-select" name="Courier" id="Courier">
-              <option selected>Choose. type Courier</option>
+            <select class="custom-select"  required  name="Courier" id="validationCustom04"  >
+              <option selected disabled value="" >Choose. type Courier</option>
               <option value="Dtdtc">DTDC</option>
               <option value="India post">INDIA POST</option>
             </select>
+            <div class="invalid-feedback">
+              Please select  Type Courier
+            </div>
           </div>
+
         </div>
-      
+        
         <div class="row">
           <div id="fieldsContainer" class="row"></div>
         </div>
-        <button type="submit" class="btn btn-primary">Order</button>
+        <button type="submit"  class="btn btn-primary">Order</button>
         </div>
       </div>
       </form>
@@ -299,6 +376,7 @@
     </div>
   </div>
 </div>
+
 </main>
 
 <script>
@@ -350,7 +428,8 @@
       imageInput.type = 'file';
       imageInput.id = 'image_file'+i;
       imageInput.name = 'image_file'+i;
-      imageInput.className  = 'form-group col-sm-12 col-lg-4 custome-file';
+      imageInput.className  = 'form-group col-sm-12 col-lg-4 custome-file ';
+      imageInput.required = true;
       fieldGroup.appendChild(imageInput);
   
       fieldsContainer.appendChild(fieldGroup);
@@ -407,6 +486,11 @@
    
      
    </script>
+
+
+
+
+
 
    
 {% endblock %}

@@ -19,7 +19,7 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" type="text/css" href="{% static 'css/util.css' %}">
-    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+  
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     <!-- Include this in the head section of your template -->
     
@@ -46,8 +46,8 @@
         crossorigin="anonymous"></script>
 <!--===============================================================================================-->
 </head>
-<body class="mt-4">
-    <div class="container " style="border: 3px solid #000;border-radius: 10px; padding: 15px; margin-top: 80px;">
+<body class=" no-page-break" >
+    <div class="container " style="border: 3px solid #000;border-radius: 10px; padding: 15px; ">
         <div class="row ">
     
             <div class="col-lg-9 col-md-9 col-xl-9 col-9">
@@ -56,29 +56,29 @@
                     <li style="margin-bottom: 3px;"><strong >To,</strong></li>
                    
                     <li style="font-weight: 600;
-                   font-size: large;margin-bottom: 3px;">Order ID: {{ order.OrderID }}</li>
+                   font-size:x-large;margin-bottom: 3px;">Order ID: {{ order.OrderID }}</li>
                     <li style="font-weight: 600;
-                    font-size: large;margin-bottom: 3px;">Name: {{ order.Name }}</li>
+                    font-size:x-large;margin-bottom: 3px;">Name: {{ order.Name }}</li>
                     <li style="font-weight: 600;
-                    font-size: large;margin-bottom: 3px;">D.no: {{ order.Dono }}</li>
+                    font-size:x-large;margin-bottom: 3px;">D.no: {{ order.Dono }}</li>
                     <li style="font-weight: 600;
-                    font-size: large;margin-bottom: 3px;">LandMark: {{ order.LandMark }}</li>
+                    font-size:x-large;margin-bottom: 3px;">LandMark: {{ order.LandMark }}</li>
                     <li style="font-weight: 600;
-                    font-size: large;margin-bottom: 3px;">Area Name: {{ order.Area_name }}</li>
+                    font-size:x-large;margin-bottom: 3px;">Area Name: {{ order.Area_name }}</li>
                     <li style="font-weight: 600;
-                    font-size: large;margin-bottom: 3px;">Village: {{ order.Village }}</li>
+                    font-size:x-large;margin-bottom: 3px;">Village: {{ order.Village }}</li>
                     <li style="font-weight: 600;
-                    font-size: large;margin-bottom: 3px;">Mandal : {{ order.Mandal  }}</li>
+                    font-size:x-large;margin-bottom: 3px;">Mandal : {{ order.Mandal  }}</li>
                     <li style="font-weight: 600;
-                    font-size: large;margin-bottom: 3px;">District: {{ order.District }}</li>
+                    font-size:x-large;margin-bottom: 3px;">District: {{ order.District }}</li>
                     <li style="font-weight: 600;
-                    font-size: large;margin-bottom: 3px;">State: {{ order.State}}</li>
+                    font-size:x-large;margin-bottom: 3px;">State: {{ order.State}}</li>
                     <li style="font-weight: 600;
-                    font-size: large;margin-bottom: 3px;">Pin code: {{ order.Postal_code }}</li>
+                    font-size: x-large;margin-bottom: 3px;">Pin code: {{ order.Postal_code }}</li>
                     <li style="font-weight: 600;
-                    font-size: large;margin-bottom: 3px;">Whatsapp No: {{ order.WhatsappNo }}</li>
+                    font-size: x-large;margin-bottom: 3px;">Whatsapp No: {{ order.WhatsappNo }}</li>
                     <li style="font-weight: 600;
-                    font-size: large;margin-bottom: 3px;">Contact No: {{ order.ContactNo }}</li>
+                    font-size: x-large;margin-bottom: 3px;">Contact No: {{ order.ContactNo }}</li>
                 </ul>
     
             </div>
@@ -100,9 +100,9 @@
                 <li   style="font-weight: 600;
                 font-size: large;margin-bottom: 3px;font-weight:700;font-size: 25px ;">CELL : 9014200295</li>
             </ul>
-            <li  style="font-weight:750;font-size: 40px ;" class="text-center"><span  style="font-weight:500;font-size: 20px ;">From : </span>RAGAVENDRA TEXTILES</li>
+            <li  style="font-weight:750;font-size: 40px ;" class="text-center color"><span  style="font-weight:500;font-size: 20px ;">From : </span>RAGAVENDRA TEXTILES</li>
             <li style="font-weight:700;font-size: 28px ;" class="text-center">D.No 12-29-7/A, Near Guntaground, kothapet, Guntur -522001, (A.P)</li>
-            <li style="font-weight:700;font-size: 28px ;" class="text-center">Connect with us on  <a   href="https://www.youtube.com/@jayakitchenjaya" target="_blank"><img src="{% static 'images/Youtube-logo.png' %}"  style="height: 50px;" alt="Image" class="img-fluid mb-1"></a>/Jaya's Kitchen</li>
+            <li style="font-weight:700;font-size: 28px ;" class="text-center">Connect with us on <a  href="https://www.youtube.com/@jayakitchenjaya" target="_blank"><img src="{% static 'images/Youtube-logo.png' %}"  style="height: 50px;" alt="Image" class="img-fluid mb-1"></a>/Jaya's Kitchen</li>
 
 
                                                                                                 
@@ -112,24 +112,6 @@
     
     
    
-    <!-- Add more order details as needed -->
-
-    <!-- <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var printLinks = document.getElementsByClassName("print-link");
-            for (var i = 0; i < printLinks.length; i++) {
-                printLinks[i].addEventListener("click", function(event) {
-                    event.preventDefault();
-                 
-                    var printWindow = window.open(this.href, "_blank");
-                    printWindow.addEventListener("load", function() {
-                        printWindow.print();
-                       
-                    });
-                });
-            }
-        });
-    </script> -->
    
     
      <script>
