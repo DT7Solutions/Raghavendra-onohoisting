@@ -22,20 +22,36 @@ from django.urls import reverse
 from django.core.mail import EmailMessage
 from django.shortcuts import render, get_object_or_404
 from .models import Orders
-
+import uuid
 
 # Create your views here.
+# def home(request):
+#     if request.method=='POST':
+#         username = request.POST.get('username',"")
+#         password = request.POST.get('pass',"")
+#         user = auth.authenticate(username=username,password=password)
+#         if user is not None:
+#             auth.login(request,user )
+#             return HttpResponseRedirect('/orders/') 
+#         else:
+#             messages.error(request, 'Invalid username or password')
+#     return render(request ,"static_pages/home.html")
 def home(request):
-    if request.method=='POST':
-        username = request.POST.get('username',"")
-        password = request.POST.get('pass',"")
-        user = auth.authenticate(username=username,password=password)
+    if request.method == 'POST':
+        username = request.POST.get('username', "")
+
+        # Check if a user with the provided username exists
+        user = User.objects.filter(username=username).first()
+
         if user is not None:
-            auth.login(request,user )
-            return HttpResponseRedirect('/orders/') 
+            # Authenticate the user without a password
+            user.backend = 'django.contrib.auth.backends.ModelBackend'
+            auth.login(request, user)
+            return HttpResponseRedirect('/orders/')
         else:
-            messages.error(request, 'Invalid username or password')
-    return render(request ,"static_pages/home.html")
+            messages.error(request, 'Invalid username')
+
+    return render(request, "static_pages/home.html")
 
 def createAccount(request):
     if request.method=='POST':
@@ -79,8 +95,8 @@ def orders(request):
         No_of_items = request.POST.get('No_of_items',"")
         tracking_id = Transactionid
         order_placed = True
-        # up_file = request.FILES['image_file']
-        # upload_file = settings.MEDIA_URL[1:] + "//img//" + str(up_file.name)
+        
+       
         for item in range(int(No_of_items)):
             size =  "size"+str(item)
             color = "item_Color"+str(item) 
@@ -96,7 +112,7 @@ def orders(request):
             message = f'welcome {request.user} thank for order raghavendra textiles '
             order_pop =  name
             messages.success(request,f'Thank you  {order_pop} for choosing Raghavendra Textiles! Your order  has been successfully placed. Happy shopping! with us')
-        # send_whatsapp_message(message=message,whatsapp_no=whatsapp_No)
+        
         return HttpResponseRedirect('/orders/')
     unique_orders = []
     orders_list = Orders.objects.filter(user=request.user).values_list('TransactionId', flat=True).distinct()
