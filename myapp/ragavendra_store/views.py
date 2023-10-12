@@ -21,7 +21,7 @@ from django.utils.encoding import force_bytes, force_str
 from django.urls import reverse
 from django.core.mail import EmailMessage
 from django.shortcuts import render, get_object_or_404
-from .models import Orders
+from .models import Orders,User_info
 from django.forms.models import model_to_dict
 import uuid
 
@@ -60,7 +60,9 @@ def createAccount(request):
         lname = request.POST.get('lname',"")
         email = request.POST.get('email',"")
         username = request.POST.get('username',"")
-        password = request.POST.get('password',"")
+        password = '123456'
+        # password = request.POST.get('password',"")
+  
 
         if User.objects.filter(username=username).exists():
             messages.error(request, 'Username already exists.')
@@ -148,6 +150,7 @@ def orders(request):
     if latest_order:
         # If there is a previous order, pass it to the template
         previous_order = model_to_dict(latest_order)
+    
     
    
     return render(request ,"static_pages/orders.html" ,{"orders_list":unique_orders,"previous_order": previous_order,"view_orders_list":view_orders_list,'profile':oUser_INFO,"profile_json": profile_json,'active_user':oUser,'order_placed': order_placed})
