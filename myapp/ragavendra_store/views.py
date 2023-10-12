@@ -22,6 +22,7 @@ from django.urls import reverse
 from django.core.mail import EmailMessage
 from django.shortcuts import render, get_object_or_404
 from .models import Orders
+from django.forms.models import model_to_dict
 import uuid
 
 # Create your views here.
@@ -77,7 +78,8 @@ def createAccount(request):
 @login_required
 def orders(request):
     tracking_id = '',
-    order_placed = False 
+    order_placed = False
+    previous_order = None 
     if request.method=='POST':
         name = request.POST.get('Name',"")
         whatsapp_No = request.POST.get('WhatsappNo',"")
@@ -124,8 +126,31 @@ def orders(request):
     oUser = User_info.objects.filter(userid = request.user.id).first()
     profile_data = User_info.objects.filter(userid=request.user.id).values()
     profile_json = json.dumps(list(profile_data))
+    latest_order = Orders.objects.filter(user=request.user).order_by('-OrderID').first()
+    # if latest_order:
+        
+    #     previous_order = {
+    #         "Name": latest_order.Name,
+    #         "WhatsappNo": latest_order.WhatsappNo,
+    #         "ContactNo": latest_order.ContactNo,
+    #         "Dono": latest_order.Dono,
+    #         "LandMark": latest_order.LandMark,
+    #         "Area_name": latest_order.Area_name,
+    #         "Village": latest_order.Village,
+    #         "Mandal": latest_order.Mandal,
+    #         "District": latest_order.District,
+    #         "State": latest_order.State,
+    #         "postal-code": latest_order.Postal_code,
+    #         "Courier": latest_order.Courier,
+    #         "TransactionNo": latest_order.TransactionId,
+    #         "No_of_items": latest_order.No_Of_Items,
+    #     }
+    if latest_order:
+        # If there is a previous order, pass it to the template
+        previous_order = model_to_dict(latest_order)
+    
    
-    return render(request ,"static_pages/orders.html" ,{"orders_list":unique_orders,"view_orders_list":view_orders_list,'profile':oUser_INFO,"profile_json": profile_json,'active_user':oUser,'order_placed': order_placed})
+    return render(request ,"static_pages/orders.html" ,{"orders_list":unique_orders,"previous_order": previous_order,"view_orders_list":view_orders_list,'profile':oUser_INFO,"profile_json": profile_json,'active_user':oUser,'order_placed': order_placed})
 
 
 # def Updatepassword(request):
